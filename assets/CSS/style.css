@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    width: 100%;
+    min-height: 100%;
+    background-color: #f9f9fb;
+    color: #18191a;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --color-red-500: #f0453d;
+    --color-red-600: #de232d;
+    --color-red-700: #b11c2d;
+    --color-amber-500: #ffd36c;
+    --color-yellow-400: #ffe683;
+    --color-green-100: #e8f8e4;
+    --color-green-400: #3ee260;
+    --color-green-500: #16b747;
+    --color-green-600: #0a983b;
+    --color-green-700: #217439;
+    --color-green-900: #224b2e;
+    --color-gray-50: #fafdff;
+    --color-gray-100: #f5fafc;
+    --color-gray-200: #e7f3fa;
+    --color-gray-300: #d0e3ec;
+    --color-gray-400: #95b4c9;
+    --color-gray-500: #6b8195;
+    --color-gray-600: #516176;
+    --color-gray-700: #3e4c5f;
+    --color-gray-800: #292f36;
+    --color-gray-900: #181d22;
+    --color-gray-950: #0e1013;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+p {
+    font-family: 'Outfit' system-ul, sans-serif;
+}
+
+
+
