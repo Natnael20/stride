@@ -306,3 +306,22 @@ p, span {
 .border:hover .collect-img img {
     transform: scale(1.05);
 }
+
+.customer-card {
+    background: var(--color-gray-900);
+    padding: 30px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Make customer cards have the same height in their row */
+@media (min-width: 576px) {
+    .row > [class*='col-'] > .customer-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
