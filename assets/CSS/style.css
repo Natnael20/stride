@@ -273,3 +273,35 @@ p, span {
     overflow: hidden;
 
 }
+
+.collection-container {
+    background:var(--color-gray-900);
+}
+
+.img-shop a {
+    width: 100%;
+
+}
+
+/* Hide the shop and wishlist elements by default */
+.collect-img .img-shop {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+/* Show them on card hover */
+.border:hover .collect-img .img-shop {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    visibility: visible;
+}
+
+.collect-img img {
+    transition: transform 0.4s ease;
+}
+
+.border:hover .collect-img img {
+    transform: scale(1.05);
+}
