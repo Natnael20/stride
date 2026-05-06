@@ -6,3 +6,31 @@ header {
     background-color: rgba(255,255,255,0.07) !important;
     color: var(--color-white);
 }
+
+.share-container {
+    margin-top: 5%;
+    padding: 30px 20px;
+    background: var(--color-gray-900) ;
+}
+
+.share-container > div {
+    background: var(--color-gray-800);
+    padding: 30px 20px;
+}
+
+
+.social-media a{
+    background-color: var(--color-gray-600);
+    padding: 6px 10px 10px 10px;         
+    border-radius: 50%;     
+    color: inherit;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a:hover {
+    filter: brightness(1.1);
+}
