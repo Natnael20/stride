@@ -77,5 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1500);
         })
     })
-
 });
+
+function clearItems() {
+    const wishlistRow = document.querySelector('.wishlist-container .row');
+    if (wishlistRow) wishlistRow.style.display = "none";
+}
