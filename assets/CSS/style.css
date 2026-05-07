@@ -223,8 +223,6 @@ p, span {
     margin-right: auto;
 }
 
-
-
 @media (max-width: 476px) {
     .card {
         max-width: 100%;
