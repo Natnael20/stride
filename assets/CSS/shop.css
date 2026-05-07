@@ -1,3 +1,25 @@
 .shop-header {
     background: var(--color-gray-900) !important;
 }
+
+
+.product-section ul li {
+    transition: all .3s linear;
+}  
+
+.filter-section ul li {
+    background:var(--color-gray-800);
+    padding: 15px 10px;
+    border-radius: 50px;
+    transition: all .3s linear;
+}
+
+.product-section ul li:hover {
+    background:var(--color-gray-800);
+    filter: brightness(.8);
+}
+
+.filter-section ul li:hover {
+    background:var(--color-gray-800);
+    filter: brightness(1.2);
+}

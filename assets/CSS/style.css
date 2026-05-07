@@ -19,6 +19,13 @@ body, html {
 
 :root {
     --primary: #EA580C;
+    --color-primary-200: #fed7aa;
+    --color-primary-400: #fb923c;
+    --color-primary-500: #f97316;
+    --color-primary-700: #c2410c;
+    --color-primary-800: #9a3412;
+    --color-primary-900: #7c2d12;
+    --color-primary-950: #431407;
     --color-red-500: oklch(63.7% .237 25.331);
     --color-red-600: oklch(57.7% .245 27.325);
     --color-red-700: oklch(50.5% .213 27.518);
@@ -281,7 +288,6 @@ p, span {
 
 .img-shop a {
     width: 100%;
-
 }
 
 /* Hide the shop and wishlist elements by default */
