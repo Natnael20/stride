@@ -1,0 +1,15 @@
+
+header {
+    background:
+        radial-gradient(circle at left center,
+            color-mix(in srgb, var(--color-primary-500) 30%, transparent) 0%,
+            color-mix(in srgb, var(--color-primary-500) 12%, transparent) 12%,
+            transparent 40%),
+        radial-gradient(circle at right center,
+            color-mix(in srgb, var(--color-primary-500) 28%, transparent) 0%,
+            color-mix(in srgb, var(--color-primary-400) 10%, transparent) 0%,
+            transparent 100%),
+        linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-950) 70%, transparent 70%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
