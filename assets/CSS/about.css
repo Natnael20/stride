@@ -24,3 +24,7 @@ header {
     text-align: center;
     line-height: 1;
 }
+
+.browse-btn:hover {
+    border: 2px solid var(--color-white);
+}
