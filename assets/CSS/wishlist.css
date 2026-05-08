@@ -1,28 +1,29 @@
 header {
-    background: var(--color-gray-900) !important;
+    background: color-mix(in oklab, var(--color-gray-900) 50%, transparent) !important;
 }
 
-.clear-all-btn:hover, .clear-all-btn:focus {
-    background-color: rgba(255,255,255,0.07) !important;
+.clear-all-btn:hover,
+.clear-all-btn:focus {
+    background-color: rgba(255, 255, 255, 0.07) !important;
     color: var(--color-white);
 }
 
 .share-container {
     margin-top: 5%;
     padding: 30px 20px;
-    background: var(--color-gray-900) ;
+    background: var(--color-gray-900);
 }
 
-.share-container > div {
+.share-container>div {
     background: var(--color-gray-800);
     padding: 30px 20px;
 }
 
 
-.social-media a{
+.social-media a {
     background-color: var(--color-gray-600);
-    padding: 6px 10px 10px 10px;         
-    border-radius: 50%;     
+    padding: 6px 10px 10px 10px;
+    border-radius: 50%;
     color: inherit;
     height: 50px;
     width: 50px;
