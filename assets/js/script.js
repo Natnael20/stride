@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Update cart badge on page load
-    function updateCartBadge() {
-        const cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
-        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-        
-        const cartBadge = document.querySelector('.shopping-cart .badge');
-        if (cartBadge) {
-            cartBadge.textContent = totalItems;
-        }
-    }
+    const addToCartButtons = document.querySelectorAll('.img-shop a');
+    const shoppingCartSpan = document.querySelector('.shopping-cart a span');
 
-    // Run on every page
-    document.addEventListener('DOMContentLoaded', updateCartBadge);
+    let counter = 0;
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            counter++;
+            shoppingCartSpan.innerHTML = counter;
+        });
+    });
 
 
     const addToWishList = document.querySelectorAll('.img-shop [aria-label="Add to wishlist"]');
