@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const addToCartButtons = document.querySelectorAll('.img-shop a');
-    const shoppingCartSpan = document.querySelector('.shopping-cart a span');
+    // Update cart badge on page load
+    function updateCartBadge() {
+        const cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        
+        const cartBadge = document.querySelector('.shopping-cart .badge');
+        if (cartBadge) {
+            cartBadge.textContent = totalItems;
+        }
+    }
 
-    let counter = 0;
-
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            counter++;
-            shoppingCartSpan.innerHTML = counter;
-        });
-    });
+    // Run on every page
+    document.addEventListener('DOMContentLoaded', updateCartBadge);
 
 
     const addToWishList = document.querySelectorAll('.img-shop [aria-label="Add to wishlist"]');
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     hoverImg.style.display = 'block';
 
-    const cards = document.querySelectorAll('#collect-card');
+    const cards = document.querySelectorAll('.collect-img');
     cards.forEach(card => {
         const mainImg = card.querySelector('#main-img');
         const hoverImg = card.querySelector('#img-replacer');
@@ -111,3 +112,35 @@ function clearItems() {
     const wishlistRow = document.querySelector('.wishlist-container .row');
     if (wishlistRow) wishlistRow.style.display = "none";
 }
+
+// Function to handle product card clicks and redirect to product page
+function setupProductRedirects() {
+    // Loop through all product IDs from 1 to 16
+    for (let i = 1; i <= 16; i++) {
+        const productCard = document.getElementById(i.toString());
+
+        if (productCard) {
+            // Make the card clickable
+            productCard.style.cursor = 'pointer';
+
+            // Add click event listener
+            productCard.addEventListener('click', (e) => {
+                // Don't redirect if clicking on Shop Now button or Wishlist button
+                if (e.target.closest('.img-shop') ||
+                    e.target.closest('.btn') ||
+                    e.target.closest('[aria-label="Add to wishlist"]')) {
+                    e.stopPropagation();
+                    return;
+                }
+
+                // Redirect to product.html with the product ID
+                window.location.href = `product.html?id=${i}`;
+            });
+        }
+    }
+}
+
+// Initialize when page loads - ONLY FOR SHOP PAGE
+document.addEventListener('DOMContentLoaded', () => {
+    setupProductRedirects();
+});
