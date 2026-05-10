@@ -12,6 +12,7 @@
 
 body, html {
     width: 100%;
+    min-width: 350px;
     min-height: 100%;
     background-color: var(--color-gray-950);
     scroll-behavior: smooth;
@@ -64,17 +65,13 @@ p, span {
     font-size: .9rem;
 }
 
-.fas {
-    color: var(--color-gray-400) !important;
+.link {
+    background-color: color-mix(in oklab, var(--color-primary-900) 20%, transparent);
+    color: var(--primary);
 }
-
 
 .first-section {
     background-color: var(--primary);
-}
-
-.navbar-brand span svg, path {
-    color: var(--color-white);
 }
 
 .nav-link {
@@ -128,6 +125,25 @@ p, span {
     background: oklch(21% .034 264.665);
 }
 
+#img-replacer.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+#main-img.active {
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+#img-replacer.show {
+    display: block;
+}
+
 .input-group input {
     border: none;
 }
@@ -154,8 +170,13 @@ p, span {
     color: var(--color-white);
 }
 
+header {
+    background: linear-gradient(130deg, var(--color-gray-950) 50%, var(--color-red-700) 100%);
+}
+
 .header-img img {
     animation: floatUpDown 2s ease-in-out infinite alternate;
+    margin-left: -20px;
     transform: rotate(-8deg);
 }
 
@@ -170,7 +191,7 @@ p, span {
 
 .shipping-box {
     position: absolute;
-    left: 0;
+    left: -50px;
     top: 180%;
 }
 
@@ -188,10 +209,22 @@ p, span {
     right: 0;
 }
 
-.header {
-    background: linear-gradient(135deg, var(--color-gray-950) 50%, var(--color-red-700) 100%);
-    padding: 20px 20px;
+.explore-arrow-animated {
+    animation: bounceArrow 2s infinite;
+    display: inline-block;
 }
+
+@keyframes bounceArrow {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
 
 .card-wrapper {
     display: grid;
@@ -278,15 +311,6 @@ p, span {
     width: 100%;
     line-height: 1;
     overflow: hidden;
-
-}
-
-.collection-container {
-    background:var(--color-gray-900);
-}
-
-.img-shop a {
-    width: 100%;
 }
 
 /* Hide the shop and wishlist elements by default */
@@ -312,6 +336,35 @@ p, span {
     transform: scale(1.05);
 }
 
+.customer-first-row {
+    position: relative;
+}
+
+.customer-first-row::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.customer-second-row > div {
+    position: relative;
+    overflow: hidden;
+}
+
+.customer-second-row > div:nth-child(-n+3)::after {
+    content: ' ';
+    position: absolute;
+    top: 15px;
+    left: 99%;
+    width: 2px;
+    height: 60%;
+    background-color: rgba(255, 255, 255, .1);
+}
+
 .customer-card {
     background: var(--color-gray-900);
     padding: 30px 30px;
@@ -321,7 +374,7 @@ p, span {
     justify-content: space-between;
 }
 
-/* Make customer cards have the same height in their row */
+
 @media (min-width: 576px) {
     .row > [class*='col-'] > .customer-card {
         height: 100%;
@@ -330,6 +383,7 @@ p, span {
         justify-content: space-between;
     }
 }
+
 
 .discount-input::placeholder {
     color: var(--color-white);

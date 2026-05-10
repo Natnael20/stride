@@ -77,6 +77,34 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1500);
         })
     })
+
+    const mainImg = document.getElementById('main-img');
+    const hoverImg = document.getElementById('img-replacer');
+
+    hoverImg.classList.add('active');
+    mainImg.classList.add('active');
+    
+    hoverImg.style.display = 'block';
+
+    const cards = document.querySelectorAll('#collect-card');
+    cards.forEach(card => {
+        const mainImg = card.querySelector('#main-img');
+        const hoverImg = card.querySelector('#img-replacer');
+
+        if (hoverImg) hoverImg.classList.add('active');
+        if (mainImg) mainImg.classList.add('active');
+        if (hoverImg) hoverImg.style.display = 'block';
+
+        card.addEventListener('mouseenter', function() {
+            if (mainImg) mainImg.style.opacity = '0';
+            if (hoverImg) hoverImg.style.opacity = '1';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            if (mainImg) mainImg.style.opacity = '1';
+            if (hoverImg) hoverImg.style.opacity = '0';
+        });
+    });
 });
 
 function clearItems() {
