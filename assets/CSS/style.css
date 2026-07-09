@@ -123,6 +123,12 @@ p, span {
 
 .search-box {
     background: oklch(21% .034 264.665);
+    display: none;
+}
+
+/* Show when active */
+.search-box.active {
+    display: block;
 }
 
 #img-replacer.active {
