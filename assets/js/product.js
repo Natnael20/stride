@@ -619,7 +619,7 @@ function renderProduct(productId) {
                     </div>
 
                     <div class="d-flex gap-3 mt-4">
-                        <button class="btn px-5 py-3 fw-bold" style="background: var(--primary); color: white;" onclick="addToCart(${product.id})">
+                        <button class="btn py-3 fw-bold" style="background: var(--primary); color: white;" onclick="addToCart(${product.id})">
                             <i class="fa fa-shopping-cart me-2"></i> Add to Cart
                         </button>
                         <button class="btn px-4 py-3 border" style="background: transparent; color: var(--primary); border-color: var(--primary);" onclick="addToWishlist(${product.id})">
@@ -627,19 +627,25 @@ function renderProduct(productId) {
                         </button>
                     </div>
 
-                    <div class="mt-4 ">
-                        <div class="d-flex justify-content-between align-items-start gap-3" style="border-radius: 1rem; padding: 1rem 1.5rem;" class="d-flex flex-wrap gap-4 align-items-center justify-content-between">
-                            <div class="d-flex align-items-center p-3 w-50 " style="background: var(--color-gray-900)">
-                                <span class="d-grid">
-                                    <span class="text-light ms-3" style="font-size:1.2rem;"><i class="fa fa-truck fs-5 me-2" style="color:var(--color-primary-700);"></i> Free Shipping</span>
-                                    <span class="text-secondary small ms-5">On orders over $75</span>
-                                </span>
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-between flex-wrap gap-3">
+                            <!-- Free Shipping -->
+                            <div class="d-block  p-3 rounded-4" style="background: var(--color-gray-900); flex: 1; min-width: 200px;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <i class="fa fa-truck fs-4" style="color:var(--color-primary-700);"></i>
+                                    <span class="text-light" style="font-size:1.1rem; white-space: nowrap;">Free Shipping
+                                    </span>
+                                </div>
+                                <span class="text-secondary small" style="margin-left: 40px">On orders over $75</span>
                             </div>
-                            <div class="d-flex align-items-center p-3 w-50" style="background: var(--color-gray-900)">
-                                <span class="d-grid">
-                                    <span class="text-light" style="font-size:1.15rem;"><i class="fa fa-undo me-2" style="color:var(--color-primary-700);"></i> 60-Day Returns</span>
-                                    <span class="text-secondary small ms-4">Try it, love it</span>
-                                </span>
+                            
+                            <!-- 60-Day Returns -->
+                            <div class="d-block p-3 rounded-4" style="background: var(--color-gray-900); flex: 1; min-width: 200px;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <i class="fa fa-undo fs-4" style="color:var(--color-primary-700);"></i>
+                                    <span class="text-light" style="font-size:1.1rem; white-space: nowrap;">60-Day Returns</span>
+                                </div>
+                                <span class="text-secondary small" style="margin-left: 38px">Try it, love it</span>
                             </div>
                         </div>
                     </div>

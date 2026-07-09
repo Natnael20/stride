@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Shop</title>
 </head>
+
 <body>
 
     <div class="first-section container-fluid">
@@ -20,20 +22,21 @@
     </div>
 
     <nav class="navbar navbar-expand-sm p-3">
-        <div class="container-fluid">
+        <div class="container">
 
             <a class="navbar-brand text-light ms-5 ms-sm-0 fw-bold order-2 order-sm-0" href="index.html">
-                <img src="assets/img/favicon.svg" alt="" width="50" height="45"> 
+                <img src="assets/img/favicon.svg" alt="" width="50" height="45">
                 Stride
             </a>
-    
+
             <button class="navbar-toggler border-0 p-0 order-1 order-sm-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#hamburgerMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Desktop Menu -->
-            <div class="collapse navbar-collapse  justify-content-center align-items-end order-last order-sm-1" id="hamburgerMenu">
+            <div class="collapse navbar-collapse  justify-content-center align-items-end order-last order-sm-1"
+                id="hamburgerMenu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" style="color: var(--primary);" href="shop.html">Shop</a>
@@ -52,48 +55,56 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="right-links d-flex justify-content-end gap-3  order-3 order-sm-2">
                 <div class="search-section">
                     <div class="search-icon-box">
-                        <i class="fa fa-search text-light opacity-75" id="search-icon" style="cursor: pointer;"></i> 
+                        <i class="fa fa-search text-light opacity-75" id="search-icon" style="cursor: pointer;"></i>
                     </div>
-    
-                    <div class="search-box position-absolute top-100 start-50 translate-middle-x mt-2 shadow rounded p-5"style="z-index: 3; width: 90%; max-width: 500px; min-width: unset;" 
-                        role="search">
+
+                    <div class="search-box position-absolute top-100 start-50 translate-middle-x mt-2 shadow rounded p-5"
+                        style="z-index: 3; width: 90%; max-width: 500px; min-width: unset;" role="search">
                         <div class="search-input mb-3">
                             <form action="" class="d-flex align-items-center">
                                 <div class="input-group search-input-group" style="position: relative;">
-                                    <span class="input-group-text bg-transparent px-3 position-absolute start-0 top-0 h-100" style="z-index: 2; cursor:pointer; border: none !important;">
+                                    <span
+                                        class="input-group-text bg-transparent px-3 position-absolute start-0 top-0 h-100"
+                                        style="z-index: 2; cursor:pointer; border: none !important;">
                                         <i class="fa fa-search text-secondary"></i>
                                     </span>
-                                    <input type="text" class="ps-5 rounded bg-transparent p-2 w-100 text-light search-input" placeholder="Search for products, brands, or categories..." id="search-box-input" style="font-size:0.95rem; border-left: none;">                                
+                                    <input type="text"
+                                        class="ps-5 rounded bg-transparent p-2 w-100 text-light search-input"
+                                        placeholder="Search for products, brands, or categories..."
+                                        id="search-box-input" style="font-size:0.95rem; border-left: none;">
                                 </div>
                             </form>
                         </div>
                         <div class="key-section my-2 d-flex align-items-center flex-wrap">
-                            <span class="small text-light"><i class="fa fa-history mt-3 text-light"></i> Recent Searches:</span>
+                            <span class="small text-light"><i class="fa fa-history mt-3 text-light"></i> Recent
+                                Searches:</span>
                             <ul class="list-unstyled popular-search mt-1 mb-0 ps-2 d-flex flex-wrap gap-2 gap-sm-4">
                                 <li class="mt-2" style="font-size:0.92em;">Running shoes</li>
                                 <li class="mt-2" style="font-size:0.92em;">Sneakers</li>
                                 <li class="mt-2" style="font-size:0.92em;">Socks</li>
                             </ul>
                         </div>
-                        <div class="keyboard-tips text-center mt-3 border-top pt-2 d-flex justify-content-center align-items-center gap-3">
+                        <div
+                            class="keyboard-tips text-center mt-3 border-top pt-2 d-flex justify-content-center align-items-center gap-3">
                             <span class="small">Press <kbd>Esc</kbd> to close</span>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="heart-icon">
                     <a href="wishlist.html" aria-label="Wishlist">
                         <i class="fa fa-heart-o text-light opacity-75" style="font-size: 1rem;" aria-hidden="true"></i>
                     </a>
-          
+
                 </div>
                 <div class="shopping-cart">
                     <a class="position-relative " href="cart.html">
                         <i class="fa fa-shopping-cart text-light opacity-75 fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1" style="font-size: 0.75em; background: var(--primary);">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1"
+                            style="font-size: 0.75em; background: var(--primary);">
                             0
                         </span>
                     </a>
@@ -124,33 +135,33 @@
         <div class="row p-3">
             <div class="col-sm-3">
                 <h5 class="text-light fw-semibold mb-3 ms-1">Categories</h5>
-                <div class="category p-4">
-                    <div class="product-section">
-                        <p class="mb-2 rounded fw-light fs-6 p-1"
-                            style="background-color: color-mix(in oklab, var(--color-primary-900) 30%, transparent); color: var(--color-primary-500);">
-                            All Products</p>
+                <div class="category p-2">
+                    <div class="product-section p-2">
+                        <p class="mb-2 rounded fw-light fs-6 rounded-2" style="background-color: color-mix(in oklab, var(--color-primary-900) 30%, transparent); color: var(--color-primary-500);">
+                            All Products
+                        </p>
                         <ul class="list-unstyled mb-4 gap-4">
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50 ">Running</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(48)</span>
                             </li>
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50 ">Sneakers</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(86)</span>
                             </li>
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50 ">Basketball</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(32)</span>
                             </li>
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50 ">Casual</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(64)</span>
                             </li>
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50 ">Boots</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(28)</span>
                             </li>
-                            <li class="mb-2 d-flex justify-content-between align-items-center">
+                            <li class="mb-2 d-flex justify-content-between align-items-center p-1">
                                 <a href="#" class="text-decoration-none text-light opacity-50">Sandals</a>
                                 <span class="badge opacity-50 ms-2" style="font-size:.85em;">(24)</span>
                             </li>
@@ -159,11 +170,11 @@
                     <div class="filter-section mt-5">
                         <h6 class="text-light fw-semibold mb-3">Quick Filters</h6>
                         <ul class="list-unstyled mb-4 d-flex gap-4">
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none text-light  opacity-75">New Arrivals</a>
+                            <li class="mb-2 p-3">
+                                <a href="#" class="text-decoration-none text-light opacity-75">New Arrivals</a>
                             </li>
-                            <li class="mb-2">
-                                <a href="#" class="text-decoration-none text-light  opacity-75">On Sale</a>
+                            <li class="mb-2 p-3">
+                                <a href="#" class="text-decoration-none text-light opacity-75">On Sale</a>
                             </li>
                         </ul>
                     </div>
@@ -201,7 +212,9 @@
                     </div>
                     <div class="sort d-flex align-items-center mb-4">
                         <label for="sort-options" class="me-2 text-light opacity-50">Sort by:</label>
-                        <select id="sort-options" class="form-select form-select-sm text-light opacity-75 border-0 w-auto" style="min-width: 150px; background-color: var(--color-gray-700);">
+                        <select id="sort-options"
+                            class="form-select form-select-sm text-light opacity-75 border-0 w-auto"
+                            style="min-width: 150px; background-color: var(--color-gray-700);">
                             <option value="featured">Featured</option>
                             <option value="price-low-high">Price: Low to High</option>
                             <option value="price-high-low">Price: High to Low</option>
@@ -214,21 +227,26 @@
                     <div class="col-6 col-sm-3 mb-5">
                         <div class="border border-dark">
                             <div class="collect-img position-relative overflow-hidden" id="1">
-                                <span class="badge text-light position-absolute top-0 mt-1 ms-3 z-3" style="background-color: var(--primary);">18%</span>
-                                <span class="badge text-light position-absolute top-0 mt-4 ms-3 z-3" style="background-color: var(--color-amber-500);">BEST SELLER</span>
-                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop" alt="Sneakers main" class="img-fluid rounded bg-transparent" id="main-img">
-                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop" alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer" style="display: none;">
-                                <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <span class="badge text-light position-absolute top-0 mt-1 ms-3 z-3"
+                                    style="background-color: var(--primary);">18%</span>
+                                <span class="badge text-light position-absolute top-0 mt-4 ms-3 z-3"
+                                    style="background-color: var(--color-amber-500);">BEST SELLER</span>
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop"
+                                    alt="Sneakers main" class="img-fluid rounded bg-transparent" id="main-img">
+                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop"
+                                    alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer"
+                                    style="display: none;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -263,17 +281,17 @@
                                     style="background-color: var(--color-amber-500);">BEST SELLER</span>
                                 <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -309,17 +327,17 @@
                                     style="background-color: var(--color-green-500);">NEW</span>
                                 <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -352,17 +370,17 @@
                                     style="background-color: var(--color-amber-500);">17%</span>
                                 <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -395,17 +413,17 @@
                                     style="background-color: var(--color-green-500);">NEW</span>
                                 <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -439,17 +457,17 @@
                                     style="background-color: var(--color-green-500);">NEW</span>
                                 <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -482,17 +500,17 @@
                             <div class="collect-img  position-relative overflow-hidden" id="7">
                                 <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -529,17 +547,17 @@
                                     style="background-color: var(--color-amber-500);">BEST SELLER</span>
                                 <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -576,17 +594,17 @@
                                     style="background-color: var(--color-green-500);">NEW</span>
                                 <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -625,17 +643,17 @@
                                     style="background-color: var(--color-amber-500);">BEST SELLER</span>
                                 <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -670,17 +688,17 @@
                             <div class="collect-img  position-relative overflow-hidden" id="11">
                                 <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -717,17 +735,17 @@
                                     style="background-color: var(--color-amber-500);">BEST SELLER</span>
                                 <img src="https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -764,17 +782,17 @@
                                     style="background-color: var(--primary);">-19%</span>
                                 <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -812,17 +830,17 @@
                                     style="background-color: var(--color-amber-500);">BEST SELLER</span>
                                 <img src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -860,17 +878,17 @@
                                     style="background-color: var(--color-green-500);">NEW</span>
                                 <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -906,17 +924,17 @@
                             <div class="collect-img  position-relative overflow-hidden" id="16">
                                 <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&h=1000&fit=crop"
                                     alt="Sneakers" class="img-fluid rounded bg-transparent">
-                                    <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-center gap-1"
-                                    style="width: 100%;">
+                                <div
+                                    class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                     <a href="#"
-                                        class="btn rounded-3 bg-light fw-semibold px-3 py-2 mt-1 align-items-center d-flex justify-content-center gap-2"
-                                        style="min-width: 150px;">
+                                        class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100"
+                                        style="min-width: fit-content;">
                                         <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                         <span>Shop Now</span>
                                     </a>
-                                    <span
-                                        class="p-3 mt-1 rounded bg-light border border-none d-flex align-items-center justify-content-center"
-                                        aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+
+                                    <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                        style="padding: 12px 12px;" aria-label="Add to wishlist">
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -951,7 +969,7 @@
         </div>
     </div>
 
-    <div class="container-fluid p-3"  style="background: var(--color-gray-900); color: var(--color-gray-400);">
+    <div class="container-fluid p-3" style="background: var(--color-gray-900); color: var(--color-gray-400);">
         <div class="row align-items-center mb-5 mt-5 p-3">
             <div class="col-lg-6 col-12 mb-4 mb-lg-0">
                 <h3 class="fw-bold text-light mb-2" style="font-size:2.3rem;">Join the <span
@@ -972,7 +990,7 @@
             </div>
         </div>
 
-        <div class="row p-3" >
+        <div class="row p-3">
             <!-- Brand/About -->
             <div class="col-12 col-sm-3">
                 <div class="icon  d-flex gap-2">
@@ -1031,21 +1049,19 @@
             <div class="col-12 col-md-6 mb-2 mb-md-0">
                 <span class="small text-secondary">&copy; 2026 Stride. All rights reserved.</span>
             </div>
-            <div class="col-12 col-md-6 text-md-end text-center align-items-center d-flex justify-content-md-end justify-content-center gap-2 flex-wrap">
-      
-                <span class="mx-3"><a href="/"
-                    class="text-secondary text-decoration-none small">Privacy</a></span>
+            <div
+                class="col-12 col-md-6 text-md-end text-center align-items-center d-flex justify-content-md-end justify-content-center gap-2 flex-wrap">
+
+                <span class="mx-3"><a href="/" class="text-secondary text-decoration-none small">Privacy</a></span>
                 <span><a href="/" class="text-secondary text-decoration-none small">Terms</a></span>
                 <span class="me-2">
                     <i class="fa fa-cc-visa fa-2x text-secondary" aria-hidden="true" title="Visa"></i>
                 </span>
                 <span class="me-2">
-                    <i class="fa fa-cc-amex fa-2x text-secondary" aria-hidden="true"
-                        title="American Express"></i>
+                    <i class="fa fa-cc-amex fa-2x text-secondary" aria-hidden="true" title="American Express"></i>
                 </span>
                 <span>
-                    <i class="fa fa-cc-mastercard fa-2x text-secondary" aria-hidden="true"
-                        title="Mastercard"></i>
+                    <i class="fa fa-cc-mastercard fa-2x text-secondary" aria-hidden="true" title="Mastercard"></i>
                 </span>
                 <span class="ms-2">
                     <i class="fa fa-cc-paypal fa-2x text-secondary" aria-hidden="true" title="PayPal"></i>

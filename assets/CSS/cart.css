@@ -1,0 +1,103 @@
+.cart-item {
+    background: var(--color-gray-800);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.quantity-btn-cart {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--color-gray-700);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.quantity-btn-cart:hover {
+    background: var(--primary);
+}
+.remove-item {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.remove-item:hover {
+    color: var(--primary) !important;
+    transform: scale(1.1);
+}
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.cart-item {
+    animation: fadeIn 0.3s ease;
+}
+.summary-card {
+    background: var(--color-gray-800);
+    border-radius: 16px;
+    position: sticky;
+    top: 20px;
+}
+.promo-input {
+    background: var(--color-gray-700);
+    border: 1px solid var(--color-gray-600);
+    color: white;
+}
+
+/* For all browsers including mobile */
+.promo-input::placeholder {
+    color: white !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.promo-input::-webkit-input-placeholder {
+    color: white !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.promo-input::-moz-placeholder {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.promo-input:-ms-input-placeholder {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.promo-input::-ms-input-placeholder {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+/* Keep text color white when typing */
+.promo-input {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.promo-input:focus {
+    background: var(--color-gray-700);
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    border-color: var(--primary);
+    box-shadow: none;
+}

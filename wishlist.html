@@ -20,7 +20,7 @@
     </div>
 
     <nav class="navbar navbar-expand-sm p-3">
-        <div class="container-fluid">
+        <div class="container">
 
             <a class="navbar-brand text-light ms-5 ms-sm-0 fw-bold order-2 order-sm-0" href="index.html">
                 <img src="assets/img/favicon.svg" alt="" width="50" height="45"> 
@@ -110,13 +110,13 @@
                     <li class="breadcrumb-item active text-light" aria-current="page">Wishlist</li>
                 </ol>
             </nav>
-            <div class="d-flex mt-3 flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-2 gap-2">
-                <div>
-                    <h1 class="text-light fw-bold mb-0" style="font-size:3rem;">My Wishlist</h1>
+            <div class="d-flex mt-3 justify-content-between align-items-start align-items-sm-center mb-2 gap-2">
+                <div class="d-flex flex-wrap align-items-center gap-2 gap-sm-3">
+                    <h1 class="text-light fw-bold mb-0" style="font-size: clamp(1.8rem, 5vw, 3rem);">My Wishlist</h1>
                     <span class="text-light opacity-75">4 items saved</span>
                 </div>
-                <button onclick="clearItems()" class="btn text-light  opacity-75 text-decoration-none text-end fw-semibold px-3 d-flex align-items-center gap-2 clear-all-btn"
-                    style="font-size: 1rem;">
+                <button onclick="clearItems()" class="btn text-light opacity-75 text-decoration-none fw-semibold px-3 d-flex align-items-center gap-2 clear-all-btn flex-shrink-0 ms-auto"
+                    style="font-size: 1rem; margin-top: 32px;">
                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                     Clear All
                 </button>
@@ -127,18 +127,19 @@
     <div class="container-fluid wishlist-container p-3" style="margin-top: 10%;">
         <div class="row p-3">
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="1">
                         <span class="badge text-light position-absolute top-0 mt-1 ms-3 z-3" style="background-color: var(--primary);">18%</span>
                         <span class="badge text-light position-absolute top-0 mt-4 ms-3 z-3" style="background-color: var(--color-amber-500);">BEST SELLER</span>
                         <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop" alt="Sneakers main" class="img-fluid rounded bg-transparent" id="main-img">
                         <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop" alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer" style="display: none;">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1">
-                            <a href="#" class="btn bg-light p-5 fw-semibold px-4 py-2 mt-1 ms-5 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
@@ -160,22 +161,20 @@
                 </div>
             </div>
             <div class="col-6 col-sm-3 mb-5">
-                <!-- INSERT_YOUR_CODE -->
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="2">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-amber-500);">BEST SELLER</span>
                         <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
-                                <i class="fa fa-heart text-danger" aria-hidden="true"></i>
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
-             
                     </div>
                     <div class="card-detail">
                         <div class="collect-name d-flex justify-content-between align-items-center">
@@ -196,21 +195,20 @@
                 </div>
             </div>
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="3">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-green-500);">NEW</span>
                         <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
-                                <i class="fa fa-heart text-danger" style="font-size: .8rem;" aria-hidden="true"></i>
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
-             
                     </div>
                     <div class="card-detail">
                         <div class="collect-name d-flex justify-content-between align-items-center">
@@ -229,18 +227,18 @@
                 </div>
             </div>
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="4">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-amber-500);">17%</span>
                         <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
-                                <i class="fa fa-heart text-danger" style="font-size: .8rem;" aria-hidden="true"></i>
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
                     </div>
@@ -299,7 +297,7 @@
                     </h3>
                 </div>
                 <div>
-                    <a href="#" class="mt-3 mt-lg-0 shadow-sm fw-semibold px-4 text-decoration-none d-inline-flex align-items-center" style="color: var(--primary);">
+                    <a href="#" class="fw-semibold text-decoration-none d-flex align-items-center" style="color: var(--primary);">
                         View All
                         <i class="fa fa-arrow-right ms-2" style="color: var(--primary);"></i>
                     </a>
@@ -308,18 +306,19 @@
         </div>
         <div class="row p-3">
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="1">
                         <span class="badge text-light position-absolute top-0 mt-1 ms-3 z-3" style="background-color: var(--primary);">18%</span>
                         <span class="badge text-light position-absolute top-0 mt-4 ms-3 z-3" style="background-color: var(--color-amber-500);">BEST SELLER</span>
                         <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop" alt="Sneakers main" class="img-fluid rounded bg-transparent" id="main-img">
                         <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop" alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer" style="display: none;">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1">
-                            <a href="#" class="btn bg-light p-5 fw-semibold px-4 py-2 mt-1 ms-5 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
@@ -342,21 +341,20 @@
             </div>
             <div class="col-6 col-sm-3 mb-5">
                 <!-- INSERT_YOUR_CODE -->
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="2">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-amber-500);">BEST SELLER</span>
                         <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
-             
                     </div>
                     <div class="card-detail">
                         <div class="collect-name d-flex justify-content-between align-items-center">
@@ -377,21 +375,20 @@
                 </div>
             </div>
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="3">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-green-500);">NEW</span>
                         <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
-                                <i class="fa fa-heart-o" style="font-size: .8rem;" aria-hidden="true"></i>
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
-             
                     </div>
                     <div class="card-detail">
                         <div class="collect-name d-flex justify-content-between align-items-center">
@@ -410,18 +407,18 @@
                 </div>
             </div>
             <div class="col-6 col-sm-3 mb-5">
-                <div class="border border-dark">
+                <div class="border border-0">
                     <div class="collect-img position-relative overflow-hidden" id="4">
                         <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3" style="background-color: var(--color-amber-500);">17%</span>
                         <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop" alt="Sneakers" class="img-fluid rounded bg-transparent">
-                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x mb-2 d-flex align-items-center justify-content-between gap-1" style="width: 90%;">
-                            <a href="#" class="btn bg-light p-5 btn-sm fw-semibold px-4 py-2 mt-1 align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: 220px;">
+                        <div class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100" >
+                            <a href="#" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100" style="min-width: fit-content;">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                 <span>Shop Now</span>
                             </a>
-                            <!-- INSERT_YOUR_CODE -->
-                            <span class="p-3 mt-1 rounded bg-light border border-none me-5 d-flex align-items-center justify-content-center" aria-label="Add to wishlist" style="width: 46px; height: 40px;">
-                                <i class="fa fa-heart-o" style="font-size: .8rem;" aria-hidden="true"></i>
+                            
+                            <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center" style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </span>
                         </div>
                     </div>
@@ -444,8 +441,8 @@
         </div>
     </div>
 
-    <div class="container-fluid p-5"  style="background: var(--color-gray-900); color: var(--color-gray-400);">
-        <div class="row align-items-center mb-5 p-3">
+    <div class="container-fluid p-3"  style="background: var(--color-gray-900); color: var(--color-gray-400);">
+        <div class="row align-items-center mb-5 mt-5 p-3">
             <div class="col-lg-6 col-12 mb-4 mb-lg-0">
                 <h3 class="fw-bold text-light mb-2" style="font-size:2.3rem;">Join the <span
                         style="color:var(--primary);">Stride Club</span></h3>
@@ -465,14 +462,11 @@
             </div>
         </div>
 
-        <div class="row p-3">
+        <div class="row p-3" >
             <!-- Brand/About -->
             <div class="col-12 col-sm-3">
                 <div class="icon  d-flex gap-2">
-                    <div class="icon  d-flex gap-2">
-                        <img src="assets/img/favicon.svg" alt="" height="30" width="30">
-                        <h5 class="fw-bold mb-2 text-light mt-1">Stride</h5>
-                    </div>
+                    <img src="assets/img/favicon.svg" alt="" height="30" width="30">
                     <h5 class="fw-bold mb-2 text-light mt-1">Stride</h5>
                 </div>
                 <p class="mb-3" style="color:var(--color-gray-300);max-width:200px;">
@@ -546,7 +540,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
