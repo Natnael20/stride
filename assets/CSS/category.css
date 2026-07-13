@@ -144,7 +144,6 @@ header {
     position: relative;
     background: var(--color-primary-500);
     color: var(--color-white);
-    border: none;
 }
 
 .decide-buttons a:first-child::after {
