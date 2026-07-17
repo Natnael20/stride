@@ -340,6 +340,7 @@ header {
 
 .img-shop {
     min-width: min-content;
+    white-space: nowrap;
 }
 
 .border:hover .collect-img img {

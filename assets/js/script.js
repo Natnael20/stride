@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             toast.style.position = 'fixed';
             toast.style.right = '32px';
             toast.style.bottom = '-60px';
-            toast.style.background = 'var(--color-green-500)';
+            toast.style.background = 'var(--color-green-900)';
             toast.style.color = '#fff';
             toast.style.padding = '16px 32px';
             toast.style.borderRadius = '30px';
