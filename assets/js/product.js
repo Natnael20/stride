@@ -2,9 +2,9 @@
 const products = {
     1: {
         id: 1,
-        name: "Velocity Runner Pro",
+        name: "Nike Free RN Flyknit",
         type: "Running",
-        price: 179,
+        price: 150,
         originalPrice: 218,
         discount: "Save $40",
         rating: 4.9,
@@ -21,7 +21,7 @@ const products = {
         specifications: [],
         sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
         colors: [
-            { name: "Red", code: "#FF5C5C" },
+            { name: "Red", code: "oklch(63.7% .237 25.331)" },
             { name: "Black", code: "#222222" },
             { name: "Blue", code: "#3578e5" }
         ],
@@ -38,7 +38,7 @@ const products = {
     },
     2: {
         id: 2,
-        name: "Streetwise Classic",
+        name: "Carhartt WIP x Nike Air Force 1 Low",
         type: "Sneakers",
         price: 129,
         originalPrice: 129,
@@ -73,8 +73,8 @@ const products = {
     },
     3: {
         id: 3,
-        name: "Court Dominator X",
-        type: "Basketball",
+        name: "Nike Air Force 1",
+        type: "Sneakers",
         price: 199,
         originalPrice: 199,
         discount: null,
@@ -107,10 +107,10 @@ const products = {
     },
     4: {
         id: 4,
-        name: "Trail Blazer GTX",
+        name: "Timberland Men's Earthkeepers Original 6-inch Boot",
         type: "Boots",
-        price: 189,
-        originalPrice: 228,
+        price: 160,
+        originalPrice: 160,
         discount: "17% OFF",
         rating: 4.8,
         reviewCount: 142,
@@ -127,7 +127,7 @@ const products = {
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
             { name: "Brown/Olive", code: "#8B5C2A" },
-            { name: "Black/Grey", code: "#222222" },
+            { name: "Black/Grey", code: "linear-gradient(135deg, #222 50%, #bbb 50%)" },
             { name: "Tan", code: "#D2B48C" }
         ],
         images: {
@@ -141,10 +141,10 @@ const products = {
     },
     5: {
         id: 5,
-        name: "Marathon Elite",
+        name: "Nike SuperRep Go",
         type: "Running",
-        price: 249,
-        originalPrice: 249,
+        price: 100,
+        originalPrice: 100,
         discount: null,
         rating: 4.9,
         reviewCount: 98,
@@ -160,9 +160,8 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Volt/Black", code: "#dfff00" },
-            { name: "White", code: "#FFFFFF" },
-            { name: "Black", code: "#222222" }
+            { name: "Volt/Black", code: "linear-gradient(135deg, #dfff00 50%, #000 50%)" },
+            { name: "White", code: "#FFFFFF" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop",
@@ -176,10 +175,10 @@ const products = {
     },
     6: {
         id: 6,
-        name: "Cloud 9 Recovery",
+        name: "Adidas Originals Deerupt Runner",
         type: "Sandals",
-        price: 59,
-        originalPrice: 59,
+        price: 120,
+        originalPrice: 120,
         discount: null,
         rating: 4.8,
         reviewCount: 267,
@@ -211,10 +210,10 @@ const products = {
     },
     7: {
         id: 7,
-        name: "Court Legacy Low",
+        name: "Nike SB Dunk High",
         type: "Sneakers",
-        price: 99,
-        originalPrice: 99,
+        price: 110,
+        originalPrice: 110,
         discount: null,
         rating: 4.5,
         reviewCount: 423,
@@ -247,10 +246,10 @@ const products = {
     },
     8: {
         id: 8,
-        name: "Summit Explorer",
-        type: "Boots",
-        price: 219,
-        originalPrice: 219,
+        name: "Vans Old Skool Sneaker",
+        type: "Sneaker",
+        price: 70,
+        originalPrice: 70,
         discount: null,
         rating: 4.7,
         reviewCount: 89,
@@ -266,9 +265,9 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Brown", code: "#8B4513" },
+            { name: "Gum/Brown", code: "#b86b3c" },
             { name: "Black", code: "#222222" },
-            { name: "Dark Grey", code: "#4a4a4a" }
+            { name: "Dark Grey", code: " linear-gradient(135deg, #222 50%, #bbb 50%)" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=1000&fit=crop",
@@ -281,10 +280,10 @@ const products = {
     },
     9: {
         id: 9,
-        name: "Aero Glide",
-        type: "Running",
-        price: 159,
-        originalPrice: 159,
+        name: "Two Strap slide sandal",
+        type: "Sandels",
+        price: 50,
+        originalPrice: 50,
         discount: null,
         rating: 4.6,
         reviewCount: 178,
@@ -299,7 +298,7 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Blue", code: "#00CED1" },
+            { name: "Dark Turquoise", code: "#00CED1" },
             { name: "Black", code: "#222222" },
             { name: "White", code: "#FFFFFF" }
         ],
@@ -314,10 +313,10 @@ const products = {
     },
     10: {
         id: 10,
-        name: "Urban Walker Pro",
-        type: "Casual",
-        price: 89,
-        originalPrice: 99,
+        name: "Nike Air Force 1 Shado Pastel",
+        type: "Training",
+        price: 210,
+        originalPrice: 210,
         discount: "10% OFF",
         rating: 4.4,
         reviewCount: 312,
@@ -347,10 +346,10 @@ const products = {
     },
     11: {
         id: 11,
-        name: "Flex Trainer",
-        type: "Training",
-        price: 119,
-        originalPrice: 119,
+        name: "Puma Court Star",
+        type: "Puma",
+        price: 99,
+        originalPrice: 99,
         discount: null,
         rating: 4.6,
         reviewCount: 245,
@@ -365,8 +364,10 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Black/Grey", code: "#222222" },
-            { name: "White/Red", code: "#FFFFFF" }
+            { name: "Black", code: "#222222" },
+            { name: "White", code: "#FFFFFF" },
+            { name: "Coral", code: "#FF7F50" },
+            { name: "Grey", code: "#888" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=1000&fit=crop",
@@ -379,10 +380,10 @@ const products = {
     },
     12: {
         id: 12,
-        name: "Trail Runner Pro",
-        type: "Trail",
-        price: 169,
-        originalPrice: 169,
+        name: "Addidas Yeezy Boost 350 V2",
+        type: "yeezy",
+        price: 220,
+        originalPrice: 220,
         discount: null,
         rating: 4.7,
         reviewCount: 134,
@@ -397,7 +398,10 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Orange/Black", code: "#FF6600" }
+            { name: "Coral", code: "#FF6600" },
+            { name: "black", code: "#222222" },
+            { name: "Red", code: "#FF5C5C" },
+            { name: "Blue", code: "#3578e5" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=800&h=1000&fit=crop",
@@ -410,10 +414,10 @@ const products = {
     },
     13: {
         id: 13,
-        name: "Comfort Slide",
-        type: "Sandals",
-        price: 45,
-        originalPrice: 55,
+        name: "Captain Lace-Up Boot",
+        type: "Boot",
+        price: 199,
+        originalPrice: 199,
         discount: "18% OFF",
         rating: 4.5,
         reviewCount: 567,
@@ -427,8 +431,9 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Black", code: "#222222" },
-            { name: "Navy", code: "#001f3f" }
+            { name: "Tan", code: "#D2B48C" },
+            { name: "Navy", code: "#001f3f" },
+            { name: "Black", code: "#222" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=1000&fit=crop",
@@ -441,10 +446,10 @@ const products = {
     },
     14: {
         id: 14,
-        name: "Speed Demon",
+        name: "Converse CHuch Taylor All star High Tops",
         type: "Running",
-        price: 229,
-        originalPrice: 229,
+        price: 80,
+        originalPrice: 80,
         discount: null,
         rating: 4.8,
         reviewCount: 76,
@@ -458,7 +463,8 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Neon Yellow", code: "#CCFF00" }
+            { name: "white", code: "#fff" },
+            { name: "Black", code: "#222" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=800&h=1000&fit=crop",
@@ -471,10 +477,10 @@ const products = {
     },
     15: {
         id: 15,
-        name: "Lifestyle 001",
-        type: "Casual",
-        price: 79,
-        originalPrice: 79,
+        name: "Nike Air Max 1 Ultra",
+        type: "Sneakers",
+        price: 150,
+        originalPrice: 150,
         discount: null,
         rating: 4.4,
         reviewCount: 198,
@@ -488,8 +494,11 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "White", code: "#FFFFFF" },
-            { name: "Black", code: "#222222" }
+            { name: "blue", code: "#3578e5" },
+            { name: "Red", code: "oklch(63.7% .237 25.331)" },
+            { name: "Black", code: "#222222" },
+            { name: "Navy", code: "#001f3f" },
+            { name: "Grey", code: "#888" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=1000&fit=crop",
@@ -520,7 +529,9 @@ const products = {
         specifications: [],
         sizes: ["7", "8", "9", "10", "11", "12"],
         colors: [
-            { name: "Black", code: "#222222" }
+            { name: "Black", code: "#222222" },
+            { name: "Gum Brown", code: "#b86b3c" },
+            { name: "Grey", code: "#888" }
         ],
         images: {
             main: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&h=1000&fit=crop",

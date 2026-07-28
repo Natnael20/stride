@@ -64,6 +64,10 @@ p, span {
     font-size: clamp(1rem, .9rem, 2rem);
 }
 
+.star {
+    color: #FFD700;
+}
+
 .link {
     background-color: color-mix(in oklab, var(--color-primary-900) 20%, transparent);
     color: var(--primary);
@@ -75,8 +79,9 @@ p, span {
 
 .nav-link {
     color: var(--color-gray-400);
-    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+    font-size: clamp(.9rem, .8rem, 1rem);
     transition: all .9s linear;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -177,12 +182,30 @@ p, span {
 
 header {
     background: linear-gradient(130deg, var(--color-gray-950) 50%, var(--color-red-700) 100%);
+    min-height: min-content;
+}
+
+.header-img {
+    min-height: 350px;
+    max-width: 550px;
+    left: 15%;
+}
+
+@media (min-width:1350px) {
+    .header-img {
+        left: 15%;
+    }
+}
+
+@media (max-width:1250px) {
+    .header-img {
+        left: 0;
+    }
 }
 
 
 .header-img img {
     animation: floatUpDown 2s ease-in-out infinite alternate;
-    margin-left: -20px;
     transform: rotate(-8deg);
 }
 
@@ -347,6 +370,67 @@ header {
     transform: scale(1.05);
 }
 
+.show-color > a {
+    width: 20px; 
+    height: 20px; 
+}
+
+.show-color > .red-shoe-choice {
+    background:var(--color-red-500);
+}
+
+.show-color .black-shoe-choice {
+    background-color: var(--color-black);
+}
+
+.show-color .blue-shoe-choice {
+    background-color: #3578e5;
+}
+
+.show-color .white-shoe-choice {
+    background-color: var(--color-white);
+}
+
+.show-color .navy-shoe-choice {
+     background-color: #001f3f;
+}
+
+.show-color .gumBrown-shoe-choice  {
+     background-color: #b86b3c;
+}
+
+.show-color .brown-Olive-shoe-choice {
+    background: linear-gradient(135deg, #8B5C2A 50%, #708238 50%);
+}
+
+.show-color .Black-Grey-shoe-choice {
+    background: linear-gradient(135deg, #222 50%, #bbb 50%);
+}
+
+.show-color .Tan-shoe-choice {
+    background: #D2B48C;
+}
+
+.show-color .volt-black-shoe-choice {
+    background: linear-gradient(135deg, #dfff00 50%, #000 50%);
+}
+
+.show-color .grey-shoe-choice {
+    background: #888;
+}
+
+.show-color .coral-shoe-choice {
+    background: #FF7F50;
+}
+
+.show-color .green-shoe-choice {
+    background: #28a745;
+}
+
+.show-color .dark-turquoise-shoe-choice {
+    background-color: #00CED1;
+}
+
 .arrivals-container {
     min-width: 390px;
     max-width: 1350px;
@@ -355,7 +439,6 @@ header {
 .customer-card {
     background: var(--color-gray-900);
 }
-
 
 .discount-input::placeholder {
     color: var(--color-white);

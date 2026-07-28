@@ -61,20 +61,20 @@
                         <i class="fa fa-search text-light opacity-75" id="search-icon" style="cursor: pointer;"></i>
                     </div>
 
-                    <div class="search-box position-absolute top-100 start-50 translate-middle-x mt-2 shadow rounded p-5"
-                        style="z-index: 3; width: 90%; max-width: 500px; min-width: unset;" role="search">
+                    <div class="search-box z-3 p-5 position-absolute top-100 start-50 translate-middle-x mt-2 shadow rounded p-5"
+                        role="search">
                         <div class="search-input mb-3">
                             <form action="" class="d-flex align-items-center">
-                                <div class="input-group search-input-group" style="position: relative;">
+                                <div class="input-group search-input-group position-relative">
                                     <span
-                                        class="input-group-text bg-transparent px-3 position-absolute start-0 top-0 h-100"
-                                        style="z-index: 2; cursor:pointer; border: none !important;">
+                                        class="input-group-text z-2 border border-0  bg-transparent px-3 position-absolute start-0 top-0 h-100"
+                                        style="cursor:pointer;">
                                         <i class="fa fa-search text-secondary"></i>
                                     </span>
                                     <input type="text"
-                                        class="ps-5 rounded bg-transparent p-2 w-100 text-light search-input"
+                                        class="ps-5 fs-6 border border-0 rounded bg-transparent p-2 w-100 text-light search-input"
                                         placeholder="Search for products, brands, or categories..."
-                                        id="search-box-input" style="font-size:0.95rem; border-left: none;">
+                                        id="search-box-input">
                                 </div>
                             </form>
                         </div>
@@ -82,9 +82,9 @@
                             <span class="small text-light"><i class="fa fa-history mt-3 text-light"></i> Recent
                                 Searches:</span>
                             <ul class="list-unstyled popular-search mt-1 mb-0 ps-2 d-flex flex-wrap gap-2 gap-sm-4">
-                                <li class="mt-2" style="font-size:0.92em;">Running shoes</li>
-                                <li class="mt-2" style="font-size:0.92em;">Sneakers</li>
-                                <li class="mt-2" style="font-size:0.92em;">Socks</li>
+                                <li class="mt-2 fs-6 display-6">Running shoes</li>
+                                <li class="mt-2 fs-6 display-6">Sneakers</li>
+                                <li class="mt-2 fs-6 display-6">Socks</li>
                             </ul>
                         </div>
                         <div
@@ -95,7 +95,7 @@
                 </div>
                 <div class="heart-icon">
                     <a href="wishlist.html" aria-label="Wishlist">
-                        <i class="fa fa-heart-o text-light opacity-75" style="font-size: 1rem;" aria-hidden="true"></i>
+                        <i class="fa fa-heart-o text-light opacity-75 fs-6" aria-hidden="true"></i>
                     </a>
 
                 </div>
@@ -113,107 +113,110 @@
     </nav>
 
     <header class="container-fluid p-3">
-        <div class="row d-flex justify-content-center align-items-center p-3">
-            <div class="col-12 col-sm-6 mt-5 text-light align-items-center mt-5">
-                <div class="collection">
-                    <p class="rounded p-1 px-3 d-flex justify-content-between gap-2"
-                        style="width:fit-content; color: var(--color-primary-400); background-color: color-mix(in oklab, var(--color-primary-400) 20%, transparent); color: var(--color-primary-500)">
-                        <i class="fa fa-bolt mt-1" aria-hidden="true"></i>
-                        New Collection 2032
-                    </p>
-                </div>
-
-                <h1 class="display-1 fw-bold">Step Into <br>
-                    <span style="color: var(--color-primary-400); font-size: 6rem;">Your Best</span>
-                </h1>
-                <p class="opacity-75" style="max-width: 550px;">Premium footwear for every step of your journey. From
-                    athletic performance to everyday comfort.
-                </p>
-                <div class="collection-buttons d-flex flex-wrap gap-4">
-                    <button
-                        class="btn text-light p-3 px-5 rounded-pill text-center d-flex align-items-center justify-content-center gap-2">
-                        Shop Now
-                        <i class="fa fa-arrow-right ms-2 text-light"></i>
-                    </button>
-                    <button class="btn text-light p-3 px-5 rounded-pill text-center">Browse Categories</button>
-                </div>
-                <div class="status" style="margin-top: 10%;">
-                    <div class="d-flex gap-4 flex-wrap mt-4 justify-content-center justify-content-sm-start">
-                        <div class="text-center">
-                            <h6 class="fw-bold fs-3">50K+</h6>
-                            <span class="small text-light">Happy Customers</span>
+        <div class="header-content mx-auto px-auto" style="max-width:1330px">
+            <div class="row justify-content-center align-items-center p-3">
+                <div class="col-12 col-sm-6 mt-5 text-light align-items-center mt-5">
+                    <div class="deails-wrapper">
+                        <div class="collection">
+                            <p class="rounded p-1 px-3 d-inline-flex gap-2"
+                                style="color: var(--color-primary-400); background-color: color-mix(in oklab, var(--color-primary-400) 20%, transparent); color: var(--color-primary-500)">
+                                <i class="fa fa-bolt mt-1" aria-hidden="true"></i>
+                                New Collection 2032
+                            </p>
                         </div>
-                        <div class="text-center">
-                            <h6 class="fw-bold fs-3 text-center">
-                                4.9
-                                <svg xmlns="http://www.w3.org/2000/svg" width=".6em" height=".6em" fill="#FFD600"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M12 2.25l2.844 7.582 8.06.094-6.458 5.16 2.253 7.614L12 17.324l-6.699 5.376 2.253-7.614-6.458-5.16 8.06-.094z" />
+    
+                        <h1 class="display-1 fw-bold">Step Into <br>
+                            <span style="color: var(--color-primary-400); font-size: 6rem;">Your Best</span>
+                        </h1>
+                        <p class="opacity-75">Premium footwear for every step of your journey. From
+                            athletic performance to everyday comfort.
+                        </p>
+                        <div class="collection-buttons d-flex flex-wrap gap-4">
+                            <button
+                                class="btn text-light p-3 px-5 rounded-pill text-center d-flex align-items-center justify-content-center gap-2">
+                                Shop Now
+                                <i class="fa fa-arrow-right ms-2 text-light"></i>
+                            </button>
+                            <button class="btn text-light p-3 px-5 rounded-pill text-center">Browse Categories</button>
+                        </div>
+                        <div class="status" style="margin-top: 10%;">
+                            <div class="d-flex gap-4 flex-wrap mt-4 justify-content-center justify-content-sm-start">
+                                <div class="text-center">
+                                    <h6 class="fw-bold fs-3">50K+</h6>
+                                    <span class="small text-light">Happy Customers</span>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="fw-bold fs-3 text-center">
+                                        4.9
+                                        <svg xmlns="http://www.w3.org/2000/svg" width=".6em" height=".6em" fill="#FFD600"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2.25l2.844 7.582 8.06.094-6.458 5.16 2.253 7.614L12 17.324l-6.699 5.376 2.253-7.614-6.458-5.16 8.06-.094z" />
+                                        </svg>
+                                    </h6>
+                                    <span class="small text-light">Average Rating</span>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="fw-bold fs-3">300+</h6>
+                                    <span class="small text-light">Styles Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mt-5">
+                    <div class="header-img position-relative">
+                        <!-- Background Image -->
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop"
+                            class="img-fluid position-absolute top-0 start-25 w-100 h-100 z-1"
+                            style="filter: brightness(0.85); border-radius:1.5rem;" alt="moving shoe">
+    
+                        <!-- Overlay content -->
+                        <div class="position-relative z-2 p-4">
+                            <!-- Shipping -->
+                            <div class="shipping-box bg-opacity-75 rounded-4 px-4 py-3 mb-3 d-flex align-items-center gap-3"
+                                style="backdrop-filter: blur(10px);">
+                                <svg width="18" height="18" style="color: var(--color-green-400);" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
                                 </svg>
-                            </h6>
-                            <span class="small text-light">Average Rating</span>
-                        </div>
-                        <div class="text-center">
-                            <h6 class="fw-bold fs-3">300+</h6>
-                            <span class="small text-light">Styles Available</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 mt-5">
-                <div class="header-img position-relative" style="min-height: 350px;">
-                    <!-- Background Image -->
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop"
-                        class="img-fluid position-absolute top-0 start-25 w-100 h-100"
-                        style="z-index: 1; filter: brightness(0.85); border-radius:1.5rem; min-width:320px; max-width: 600px;"
-                        alt="">
-
-                    <!-- Overlay content -->
-                    <div class="position-relative z-2 h-100" style="padding: 2rem;">
-                        <!-- Shipping -->
-                        <div class="shipping-box bg-opacity-75 rounded-4 px-4 py-3 mb-3 d-flex align-items-center gap-3"
-                            style="backdrop-filter: blur(10px);">
-                            <svg width="18" height="18" style="color: var(--color-green-400);" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-
-
-                            <div class="p-3 d-grid" style="line-height: 1;">
-                                <h6 class="fw-bold text-light">Free Shipping</h6>
-                                <span class="text-light opacity-75">On all orders over $99</span>
+    
+    
+                                <div class="p-3 d-block">
+                                    <h6 class="fw-bold text-light">Free Shipping</h6>
+                                    <span class="text-light opacity-75">On all orders over $99</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Discount -->
-                        <div class="discount-box bg-opacity-75 px-2 d-flex align-items-center gap-3 text-center">
-                            <div class="badge p-3">
-                                <span class="fw-bold text-light">Up to</span>
-                                <h6 class="fw-bolder text-light mt-1">40%</h6>
-                                <span class="text-light fw-bold">Off</span>
+    
+                            <!-- Discount -->
+                            <div class="discount-box bg-opacity-75 px-3 d-flex align-items-center gap-3 text-center">
+                                <div class="badge p-3">
+                                    <span class="fw-bold text-light">Up to</span>
+                                    <h6 class="fw-bolder text-light mt-1">40%</h6>
+                                    <span class="text-light fw-bold">Off</span>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Returns -->
-                        <div class="returns-box bg-opacity-75  rounded-4 px-4 py-3 d-flex align-items-center gap-3"
-                            style="backdrop-filter: blur(10px);">
-                            <i class="fa fa-undo fa-lg text-danger"></i>
-                            <div class="p-3 " style="line-height: 1;">
-                                <h6 class="fw-bold text-light">Easy Returns</h6>
-                                <span class="text-light opacity-75">60-day guarantee</span>
+                            <!-- Returns -->
+                            <div class="returns-box bg-opacity-75  rounded-4 px-4 py-3 d-flex align-items-center gap-3"
+                                style="backdrop-filter: blur(10px);">
+                                <i class="fa fa-undo fa-lg text-danger"></i>
+                                <div class="p-3 d-block">
+                                    <h6 class="fw-bold text-light">Easy Returns</h6>
+                                    <span class="text-light opacity-75">60-day guarantee</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center mt-2 position-relative z-3">
-            <span class="text-light opacity-75 mb-1" style="letter-spacing: 0.06em;">Explore</span>
-            <a href="#shop-by-category" id="explore-arrow"
-                class="text-decoration-none d-flex flex-column align-items-center mt-1" style="cursor: pointer;">
-                <i class="fa fa-long-arrow-down text-light opacity-75 explore-arrow-animated" aria-hidden="true"></i>
-            </a>
+            <div class="d-flex flex-column align-items-center justify-content-center mt-2 position-relative z-3">
+                <span class="text-light opacity-75 mb-1" style="letter-spacing: 0.06em;">Explore</span>
+                <a href="#shop-by-category" id="explore-arrow"
+                    class="text-decoration-none d-flex flex-column align-items-center mt-1" style="cursor: pointer;">
+                    <i class="fa fa-long-arrow-down text-light opacity-75 explore-arrow-animated" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -229,7 +232,7 @@
                         class="mt-3 mt-lg-0 shadow-sm fw-semibold px-4 text-decoration-none d-inline-flex align-items-center"
                         style="color: var(--primary);">
                         View All
-                        <i class="fa fa-arrow-right ms-2" style="color: var(--primary); font-size: .8rem;"></i>
+                        <i class="fa fa-arrow-right ms-2 fs-6"></i>
                     </a>
                 </div>
             </div>
@@ -245,8 +248,7 @@
                     <span class="text-light p-2 px-3">48 products</span>
                     <h4 class="fw-bold mt-2 text-light">Running</h4>
                     <p class="mb-2 text-light opacity-75">Performance shoes built for speed and endurance</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -261,8 +263,7 @@
                     <span class="text-light p-2 px-3">86 products</span>
                     <h4 class="fw-bold mt-2 text-light">Sneakers</h4>
                     <p class="mb-2 text-light opacity-75">Classic and contemporary streetwear styles</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -277,8 +278,7 @@
                     <span class="text-light p-2 px-3">32 products</span>
                     <h4 class="fw-bold mt-2 text-light">Basketball</h4>
                     <p class="mb-2 text-light opacity-75">Court-ready shoes with superior ankle support</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -294,8 +294,7 @@
                     <span class="text-light p-2 px-3">64 products</span>
                     <h4 class="fw-bold mt-2 text-light">Casual</h4>
                     <p class="mb-2 text-light opacity-75">Everyday comfort meets effortless style</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -310,8 +309,7 @@
                     <span class="text-light p-2 px-3">28 products</span>
                     <h4 class="fw-bold mt-2 text-light">Boots</h4>
                     <p class="mb-2 text-light opacity-75">Rugged style for any terrain</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -328,8 +326,7 @@
                     <span class="text-light p-2 px-3">28 products</span>
                     <h4 class="fw-bold mt-2 text-light">Boots</h4>
                     <p class="mb-2 text-light opacity-75">Rugged style for any terrain</p>
-                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2"
-                        style="color: var(--color-white); border-radius: 999px;">
+                    <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light">
                         Shop Now
                         <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -351,7 +348,7 @@
                             class="mt-3 link mt-lg-0 shadow-sm fw-semibold p-2 px-4 rounded-pill text-decoration-none d-inline-flex align-items-center"
                             style="color: var(--primary);">
                             View All Featured
-                            <i class="fa fa-arrow-right ms-2" style="color: var(--primary);"></i>
+                            <i class="fa fa-arrow-right ms-2"></i>
                         </a>
                     </div>
                 </div>
@@ -364,11 +361,10 @@
                                 style="background-color: var(--primary);">18%</span>
                             <span class="badge text-light position-absolute top-0 mt-4 ms-3 z-3"
                                 style="background-color: var(--color-amber-500);">BEST SELLER</span>
-                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop"
-                                alt="Sneakers main" class="img-fluid rounded bg-transparent" id="main-img">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop" alt="Sneakers main"
+                                class="img-fluid rounded bg-transparent" id="main-img">
                             <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop"
-                                alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer"
-                                style="display: none;">
+                                alt="Sneakers hover view" class="img-fluid rounded bg-transparent" id="img-replacer" style="display: none;">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -376,7 +372,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -386,18 +382,14 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Running</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.9</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.9</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Velocity Runner Pro</p>
-                            <span class="text-light fw-semibold mt-5">$179</span>
+                            <p class="mb-3 fw-bold text-light">Nike Free RN Flyknit</p>
+                            <span class="text-light fw-semibold mt-5">$150</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Red"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FF5C5C;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="Blue"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3578e5;"></a>
+                                <a title="Red" class="red-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Blue" class="blue-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light p-1 px-2  rounded-pill"
                                 style="font-size: .8rem; background-color: var(--primary);">12 sizes available</span>
@@ -405,13 +397,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-3 mb-5">
-                    <!-- INSERT_YOUR_CODE -->
                     <div class="border border-0">
                         <div class="collect-img position-relative overflow-hidden" id="2">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3 z-3"
                                 style="background-color: var(--color-amber-500);">BEST SELLER</span>
-                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -419,7 +410,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -429,21 +420,15 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Sneakers</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.8</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.8</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Streetwise Classic</p>
+                            <p class="mb-3 fw-bold text-light">Carhartt WIP x Nike Air Force 1 Low</p>
                             <span class="text-light fw-semibold mt-5">$129</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="Navy"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #001f3f;"></a>
-                                <a title="Gum Brown"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #b86b3c;"></a>
-
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Navy" class="navy-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Gum Brown" class="gumBrown-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes available</span>
                         </div>
@@ -454,8 +439,8 @@
                         <div class="collect-img position-relative overflow-hidden" id="3">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
                                 style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -463,7 +448,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -473,18 +458,14 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Basketball</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.7</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.7</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Court Dominator X</p>
+                            <p class="mb-3 fw-bold text-light">Nike Air Force 1</p>
                             <span class="text-light fw-semibold mt-5">$199</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Blue"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3578e5;"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Blue" class="blue-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">11 sizes available</span>
                         </div>
@@ -495,8 +476,8 @@
                         <div class="collect-img position-relative overflow-hidden" id="4">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
                                 style="background-color: var(--color-amber-500);">17%</span>
-                            <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -504,7 +485,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -514,18 +495,14 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Boots</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.8</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.8</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Trail Blazer GTX</p>
-                            <span class="text-light fw-semibold mt-5">$189</span>
+                            <p class="mb-3 fw-bold text-light">Timberland Men's Earthkeepers Original 6-inch Boot</p>
+                            <span class="text-light fw-semibold mt-5">$160</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Brown/Olive"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #8B5C2A 50%, #708238 50%); border: 1.5px solid #ad9646;"></a>
-                                <a title="Black/Grey"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #222 50%, #bbb 50%); border: 1.5px solid #777;"></a>
-                                <a title="Tan"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #D2B48C; border: 1.5px solid #b49464;"></a>
+                                <a title="Brown/Olive" class="Brown-Olive-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Black/Grey" class="Black-Grey-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Tan" class="Tan-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes available</span>
                         </div>
@@ -536,8 +513,8 @@
                         <div class="collect-img position-relative overflow-hidden" id="5">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
                                 style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -545,30 +522,25 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                 </span>
                             </div>
-
+                    
                         </div>
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Running</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.9</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.9</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Marathon Elite</p>
-                            <span class="text-light fw-semibold mt-5">$249</span>
+                            <p class="mb-3 fw-bold text-light">Nike SuperRep Go</p>
+                            <span class="text-light fw-semibold mt-5">$100</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Volt/Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #dfff00 50%, #000 50%); border: 1.5px solid #bcbf33;"></a>
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-
+                                <a title="Volt/Black" class="volt-black-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes available</span>
                         </div>
@@ -579,8 +551,8 @@
                         <div class="collect-img position-relative overflow-hidden" id="6">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
                                 style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -588,7 +560,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -598,20 +570,15 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Sandals</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.8</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.8</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Cloud 9 Recovery</p>
-                            <span class="text-light fw-semibold mt-5">$59</span>
+                            <p class="mb-3 fw-bold text-light">Adidas Originals Deerupt Runner</p>
+                            <span class="text-light fw-semibold mt-5">$120</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="Grey"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #888;"></a>
-                                <a title="Coral"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FF7F50;"></a>
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Grey" class="grey-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Coral" class="coral-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">8 sizes available</span>
                         </div>
@@ -620,8 +587,8 @@
                 <div class="col-12 col-sm-3 mb-5">
                     <div class="border border-0">
                         <div class="collect-img position-relative overflow-hidden" id="7">
-                            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -629,7 +596,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -639,27 +606,20 @@
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
                                 <span class="text-secondary mt-2 mb-3">Sneakers</span>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.5</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.5</span>
                             </div>
-                            <p class="mb-3 fw-bold text-light">Court Legacy Low</p>
-                            <span class="text-light fw-semibold mt-5">$99</span>
+                            <p class="mb-3 fw-bold text-light">Nike SB Dunk High</p>
+                            <span class="text-light fw-semibold mt-5">$110</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="Red"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FF5C5C;"></a>
-                                <a title="Blue"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3578e5;"></a>
-                                <a title="Green"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #28a745;"></a>
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Red" class="red-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Blue" class="blue-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="Green" class="green-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes available</span>
                         </div>
                     </div>
-                </div>
             </div>
             <div class="row p-3">
                 <div class="col-md-3 col-sm-6 mt-4">
@@ -745,12 +705,11 @@
         </div>
     </div>
 
-    <div class="container-fluid arrivals-container position-relative" >
+    <div class="container-fluid arrivals-container position-relative">
         <div>
             <div class="Arrivals-header mt-5">
                 <div class="d-flex justify-content-between align-items-center flex-wrap mb-4 p-4">
-                    <div>
-                        <!-- INSERT_YOUR_CODE -->
+                    <div class="dropping-wrapper">
                         <span class="d-inline-flex align-items-center mb-2 p-2 rounded-4 px-3 fw-semibold"
                             style="color:var(--color-green-500) ;background: color-mix(in oklab, var(--color-green-400) 10%, transparent);">
                             <svg width="14" height="14"
@@ -780,11 +739,11 @@
             <div class="row p-3">
                 <div class="col-6 col-sm-3 mb-5">
                     <div class="border border-0">
-                        <div class="collect-img position-relative overflow-hidden">
+                        <div class="collect-img position-relative overflow-hidden" id="3">
                             <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
                                 style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -792,7 +751,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -801,116 +760,25 @@
                         </div>
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
-                                <p class="text-light mt-2 opacity-75">Basketball</p>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.7</span>
+                                <span class="text-secondary mt-2 mb-3">Basketball</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1 star"></i>4.7</span>
                             </div>
-                            <p class="fw-bold text-light">Court Dominator X</p>
-                            <span class="text-light fw-semibold">$199</span>
+                            <p class="mb-3 fw-bold text-light">Nike Air Force 1</p>
+                            <span class="text-light fw-semibold mt-5">$199</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Blue"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #3578e5;"></a>
-                            </div>
-                            <span class="mt-5 text-light rounded" style="font-size: .8rem;">11 sizes available</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-6 col-sm-3 mb-5">
-
-                    <div class="border border-0">
-                        <div class="collect-img position-relative overflow-hidden">
-                            <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
-                                style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
-                            <div
-                                class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
-                                <a href="#"
-                                    class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
-                                    <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
-                                    <span>Shop Now</span>
-                                </a>
-
-                                <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
-                                    style="padding: 12px 12px;" aria-label="Add to wishlist">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card-detail">
-                            <div class="collect-name d-flex justify-content-between align-items-center">
-                                <p class="text-light mt-2 opacity-75">Sandals</p>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.5</span>
-                            </div>
-                            <p class="fw-bold text-light">Summer Slide Sport</p>
-                            <span class="text-light fw-semibold">$49</span>
-                            <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Navy"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #001F54; border: 1.5px solid #001030;"></a>
-                            </div>
-                            <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">8 sizes available</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-3 mb-5">
-                    <div class="border border-0">
-                        <div class="collect-img position-relative overflow-hidden">
-                            <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
-                                style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
-                            <div
-                                class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
-                                <a href="#"
-                                    class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
-                                    <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
-                                    <span>Shop Now</span>
-                                </a>
-
-                                <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
-                                    style="padding: 12px 12px;" aria-label="Add to wishlist">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card-detail">
-                            <div class="collect-name d-flex justify-content-between align-items-center">
-                                <p class="text-light mt-2 opacity-75">Running</p>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.9</span>
-                            </div>
-                            <p class="fw-bold text-light">Marathon Elite</p>
-                            <span class="text-light fw-semibold">$249</span>
-                            <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Volt"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #CEFF1A;"></a>
-                                <a title="White"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 1.5px solid #ccc;"></a>
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222;"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-block rounded-circle"></a>
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Blue" class="blue-shoe-choice color-choice d-inline-block rounded-circle"></a>
                             </div>
                             <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">11 sizes available</span>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 mb-5">
                     <div class="border border-0">
-                        <div class="collect-img position-relative overflow-hidden">
-                            <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
-                                style="background-color: var(--color-green-500);">NEW</span>
-                            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=1000&fit=crop"
-                                alt="Sneakers" class="img-fluid rounded bg-transparent">
+                        <div class="collect-img  position-relative overflow-hidden" id="11">
+                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
                             <div
                                 class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
                                 <a href="#"
@@ -918,7 +786,7 @@
                                     <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
                                     <span>Shop Now</span>
                                 </a>
-
+                    
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
                                     style="padding: 12px 12px;" aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -927,21 +795,95 @@
                         </div>
                         <div class="card-detail">
                             <div class="collect-name d-flex justify-content-between align-items-center">
-                                <p class="text-light mt-2 opacity-75">Boots</p>
-                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1"
-                                        style="color: #FFD700;"></i>4.8</span>
+                                <span class="text-secondary mt-2 mb-3">Sneakers</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1" style="color: #FFD700;"></i>4.5</span>
                             </div>
-                            <p class="fw-bold text-light">Trail Blazer GTX</p>
-                            <span class="text-light fw-semibold">$189</span>
+                            <p class="mb-3 fw-bold text-light">Puma Court Star</p>
+                            <span class="text-light fw-semibold mt-5">$99</span>
                             <div class="show-color d-flex gap-2 mt-2 mb-2">
-                                <a title="Black"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222; border: 1.5px solid #000;"></a>
-                                <a title="Grey"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #bbb; border: 1.5px solid #888;"></a>
-                                <a title="Coral"
-                                    style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #FF7F50; border: 1.5px solid #f45a39;"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Coral" class="coral-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Grey" class="grey-shoe-choice color-choice d-inline-black rounded-circle"></a>
                             </div>
-                            <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes available</span>
+                            <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes
+                                available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 mb-5">
+                    <div class="border border-0">
+                        <div class="collect-img  position-relative overflow-hidden" id="14">
+                            <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
+                                style="background-color: var(--color-amber-500);">BEST SELLER</span>
+                            <img src="https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
+                            <div
+                                class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
+                                <a href="#"
+                                    class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
+                                    <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
+                                    <span>Shop Now</span>
+                                </a>
+                    
+                                <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                    style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-detail">
+                            <div class="collect-name d-flex justify-content-between align-items-center">
+                                <span class="text-secondary mt-2 mb-3">Sneakers</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1" style="color: #FFD700;"></i>4.5</span>
+                            </div>
+                            <p class="mb-3 fw-bold text-light">Converse Chuch Taylor All star High Tops</p>
+                            <span class="text-light fw-semibold mt-5">$80</span>
+                            <div class="show-color d-flex gap-2 mt-2 mb-2">
+                                <a title="White" class="white-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                            </div>
+                            <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes
+                                available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 mb-5">
+                    <div class="border border-0">
+                        <div class="collect-img  position-relative overflow-hidden" id="12">
+                            <span class="badge text-light position-absolute top-0 mt-3 ms-3 z-3"
+                                style="background-color: var(--color-amber-500);">BEST SELLER</span>
+                            <img src="https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=800&h=1000&fit=crop" alt="Sneakers"
+                                class="img-fluid rounded bg-transparent">
+                            <div
+                                class="img-shop  position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100">
+                                <a href="#"
+                                    class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
+                                    <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
+                                    <span>Shop Now</span>
+                                </a>
+                    
+                                <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
+                                    style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-detail">
+                            <div class="collect-name d-flex justify-content-between align-items-center">
+                                <span class="text-secondary mt-2 mb-3">Sneakers</span>
+                                <span class="badge me-2 bg-transparent"><i class="fa fa-star me-1" style="color: #FFD700;"></i>4.5</span>
+                            </div>
+                            <p class="mb-3 fw-bold text-light">Addidas Yeezy Boost 350 V2</p>
+                            <span class="text-light fw-semibold mt-5">$220</span>
+                            <div class="show-color d-flex gap-2 mt-2 mb-2">
+                                <a title="Coral" class="coral-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Black" class="black-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Red" class="red-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                                <a title="Blue" class="blue-shoe-choice color-choice d-inline-black rounded-circle"></a>
+                            </div>
+                            <span class="mt-5 text-light opacity-75" style="font-size: .8rem;">12 sizes
+                                available</span>
                         </div>
                     </div>
                 </div>
@@ -954,23 +896,24 @@
             <div class="customer-header text-center text-light">
                 <span class="link  p-2 px-3 rounded-4">Customer Love</span>
                 <h1 class="fw-bold mt-3">What Our Customers Say</h1>
-                <p class="text-light opacity-75">Join thousands of happy customers who have made Stride their go-to footwear
-                    brand</p>
+                <p class="text-light opacity-75">Join thousands of happy customers who have made Stride their go-to
+                    footwear brand</p>
             </div>
             <div class="row p-3 customer-first-row position-relative">
                 <div class="col-sm-6 col-md-4 mt-5 position-relative overflow-hidden">
-                    <div class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
+                    <div
+                        class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
                         <div class="stars">
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
                         </div>
                         <div class="customer-comment mt-3">
                             <p class="text-light">
-                                "Stride has completely transformed my running experience. The Velocity Runner Pro helped me
-                                PR at my last marathon by 8 minutes."
+                                "Stride has completely transformed my running experience. The Velocity Runner Pro helped
+                                me PR at my last marathon by 8 minutes."
                             </p>
                         </div>
                         <div class="customer-info mt-5 d-flex justify-content-start align-items-center gap-4">
@@ -986,17 +929,19 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 mt-5">
-                    <div class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
+                    <div
+                        class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
                         <div class="stars">
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
                         </div>
                         <div class="customer-comment mt-3 ">
                             <p class="text-light">
-                                "I wear Stride shoes for all my classes. They are versatile, stylish, and most importantly,
+                                "I wear Stride shoes for all my classes. They are versatile, stylish, and most
+                                importantly,
                                 my feet never hurt after a long day of training."
                             </p>
                         </div>
@@ -1013,17 +958,19 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 mt-5">
-                    <div class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
+                    <div
+                        class="customer-card h-100 p-5 px-4 rounded-3 shadow d-flex flex-column justify-content-center">
                         <div class="stars">
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
-                            <i class="fa fa-star me-1" style="color: #FFD700;"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
+                            <i class="fa fa-star me-1 star"></i>
                         </div>
                         <div class="customer-comment mt-3">
                             <p class="text-light">
-                                "The quality and attention to detail is unmatched. I have been collecting sneakers for 15
+                                "The quality and attention to detail is unmatched. I have been collecting sneakers for
+                                15
                                 years and Stride has become my go-to brand."
                             </p>
                         </div>
@@ -1078,13 +1025,13 @@
                         style="color:var(--color-yellow-400);font-weight:600;">15% off</span> your first order.<br>
                     Plus, early access to new releases and exclusive member-only deals.
                 </p>
-                <form class="position-relative overflow-hidden d-flex gap-2 mx-auto justify-content-center align-items-center"
+                <form
+                    class="position-relative overflow-hidden d-flex gap-2 mx-auto justify-content-center align-items-center"
                     style="max-width: 400px;">
-                    <input type="email" class="discount-input form-control p-2 px-3 text-light border border-0 rounded-pill"
-                        placeholder="Enter your email" required style="min-width: 0; background-color: inherit;"
-                        onclick="this.style.borderColor='#fff'; this.style.boxShadow='0 0 0 2px #fff';"
-                        onblur="this.style.borderColor=''; this.style.boxShadow='';" />
-                    <button type="submit" class="btn btn-light rounded-pill p-2 px-4 position-absolute top-0 end-0"
+                    <input type="email"
+                        class="discount-input form-control w-100 px-3 p-2 text-light border border-2 rounded-pill"
+                        placeholder="Enter your email" required style="min-width: 0; background-color: inherit; outline: none">
+                    <button type="submit" class="btn btn-light mb-1 rounded-pill p-2 px-4 position-absolute end-0"
                         style="white-space: nowrap; color: var(--primary);">Get 15% Off</button>
                 </form>
                 <p class="text-light opacity-75 mt-2 mb-0" style="font-size: .95em;">No spam, ever. Unsubscribe anytime.
@@ -1093,7 +1040,7 @@
             <div class="mt-4 mt-md-0 text-center">
                 <h5 class="text-light mt-4">Download Our App</h5>
                 <div class="d-flex gap-2 flex-wrap justify-content-center h-75 overflow-hidden">
-                    <a href="/" tabIndex="0"><img class="bn46 img-fluid h-100" 
+                    <a href="/" tabIndex="0"><img class="bn46 img-fluid h-100"
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             alt="bn45" width="155" />
                     </a>
@@ -1137,7 +1084,7 @@
                         <img src="assets/img/favicon.svg" alt="" height="30" width="30">
                         <h5 class="fw-bold mb-2 text-light mt-1">Stride</h5>
                     </div>
-                    <p class="mb-3" style="color:var(--color-gray-300);max-width:200px;">
+                    <p class="mb-3" style="color:var(--color-gray-300); max-width:200px;">
                         Premium footwear for every step of your journey.<br>
                         From athletic performance to everyday comfort.
                     </p>
@@ -1217,5 +1164,4 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/search.js"></script>
 </body>
-
 </html>
