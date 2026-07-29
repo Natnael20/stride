@@ -91,9 +91,10 @@
           
                 </div>
                 <div class="shopping-cart">
-                    <a class="position-relative " href="cart.html">
+                    <a class="position-relative" href="cart.html">
                         <i class="fa fa-shopping-cart text-light opacity-75 fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1" style="font-size: 0.75em; background: var(--primary);">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1"
+                            style="font-size: 0.75em; background: var(--primary);" id="cart-badge">
                             0
                         </span>
                     </a>
@@ -131,10 +132,10 @@
                         <span class="text-light p-2 px-3">48 products</span>
                         <h4 class="fw-bold mt-2 text-light">Running</h4>
                         <p class="mb-2 text-light opacity-75">Performance shoes built for speed and endurance</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(1)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
                     <!-- Red animated underline (no pseudo-elements used) -->
                     <div class="red-bottom-underline position-absolute start-0 bottom-0 w-100" 
@@ -150,10 +151,10 @@
                         <span class="text-light p-2 px-3">86 products</span>
                         <h4 class="fw-bold mt-2 text-light">Sneakers</h4>
                         <p class="mb-2 text-light opacity-75">Classic and contemporary streetwear styles</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(2)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -166,10 +167,10 @@
                         <span class="text-light p-2 px-3">32 products</span>
                         <h4 class="fw-bold mt-2 text-light">Basketball</h4>
                         <p class="mb-2 text-light opacity-75">Court-ready shoes with superior ankle support</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(3)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
     
                 </div>
@@ -183,10 +184,10 @@
                         <span class="text-light p-2 px-3">64 products</span>
                         <h4 class="fw-bold mt-2 text-light">Casual</h4>
                         <p class="mb-2 text-light opacity-75">Everyday comfort meets effortless style</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(8)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -199,10 +200,10 @@
                         <span class="text-light p-2 px-3">28 products</span>
                         <h4 class="fw-bold mt-2 text-light">Boots</h4>
                         <p class="mb-2 text-light opacity-75">Rugged style for any terrain</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(4)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -215,10 +216,10 @@
                         <span class="text-light p-2 px-3">28 products</span>
                         <h4 class="fw-bold mt-2 text-light">Boots</h4>
                         <p class="mb-2 text-light opacity-75">Rugged style for any terrain</p>
-                        <a href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 cat-btn-anim" style="color: var(--color-white); border-radius: 999px;">
-                            Shop Now
+                        <button href="#" class="btn btn-sm fw-semibold px-4 py-2 mt-2 rounded-pill text-light" onclick="addToCart(9)">
+                            Shop Now 
                             <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -364,6 +365,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/cart.js"></script>
     <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
