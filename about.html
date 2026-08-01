@@ -63,20 +63,20 @@
                         role="search">
                         <div class="search-input mb-3">
                             <form action="" class="d-flex align-items-center">
-                                <div class="input-group search-input-group" style="position: relative;">
+                                <div class="input-group search-input-group position-relative">
                                     <span class="input-group-text bg-transparent px-3 position-absolute start-0 top-0 h-100" style="z-index: 2; cursor:pointer; border: none !important;">
                                         <i class="fa fa-search text-secondary"></i>
                                     </span>
-                                    <input type="text" class="ps-5 rounded bg-transparent p-2 w-100 text-light search-input" placeholder="Search for products, brands, or categories..." id="search-box-input" style="font-size:0.95rem; border-left: none;">                                
+                                    <input type="text" class="ps-5 rounded bg-transparent p-2 w-100 text-light search-input fa-6" placeholder="Search for products, brands, or categories..." id="search-box-input">                                
                                 </div>
                             </form>
                         </div>
                         <div class="key-section my-2 d-flex align-items-center flex-wrap">
                             <span class="small text-light"><i class="fa fa-history mt-3 text-light"></i> Recent Searches:</span>
                             <ul class="list-unstyled popular-search mt-1 mb-0 ps-2 d-flex flex-wrap gap-2 gap-sm-4">
-                                <li class="mt-2" style="font-size:0.92em;">Running shoes</li>
-                                <li class="mt-2" style="font-size:0.92em;">Sneakers</li>
-                                <li class="mt-2" style="font-size:0.92em;">Socks</li>
+                                <li class="mt-2 fa-6">Running shoes</li>
+                                <li class="mt-2 fa-6">Sneakers</li>
+                                <li class="mt-2 fa-6">Socks</li>
                             </ul>
                         </div>
                         <div class="keyboard-tips text-center mt-3 border-top pt-2 d-flex justify-content-center align-items-center gap-3">
@@ -86,15 +86,15 @@
                 </div>  
                 <div class="heart-icon">
                     <a href="wishlist.html" aria-label="Wishlist">
-                        <i class="fa fa-heart-o text-light opacity-75" style="font-size: 1rem;" aria-hidden="true"></i>
+                        <i class="fa fa-heart-o text-light opacity-75 fa-1"  aria-hidden="true"></i>
                     </a>
           
                 </div>
                 <div class="shopping-cart">
                     <a class="position-relative" href="cart.html">
                         <i class="fa fa-shopping-cart text-light opacity-75 fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1"
-                            style="font-size: 0.75em; background: var(--primary);" id="cart-badge">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1 small"
+                            style="background: var(--primary);" id="cart-badge">
                             0
                         </span>
                     </a>
@@ -105,9 +105,9 @@
 
     <header class="container-fluid py-4 p-3 align-content-center ">
         <div class="header-content p-1 px-auto mx-auto" style="margin-top: 5%; max-width: 1330px;">
-            <span class="mb-2 p-2 px-3 rounded-pill"style="background-color: color-mix(in oklab, var(--color-primary-900) 30%, transparent); color: var(--color-primary-500); width:fit-content;">
+            <span class="mb-2 p-2 px-3 rounded-pill"style="background-color: color-mix(in oklab, var(--color-primary-900) 30%, transparent); color: var(--color-primary-500);">
             Our Story</span>
-            <h1 class=" mt-4 fw-bolder text-light" style="font-size: 4rem">We believe in the power of <br> the <strong style="color: var(--color-primary-400);">perfect step</strong></h1>
+            <h1 class=" mt-4 fw-bolder text-light fa-4x">We believe in the power of <br> the <strong style="color: var(--color-primary-400);">perfect step</strong></h1>
             <div class="mt-4" style="max-width: 700px; min-width: min-content; line-height: 4;">
                 <h6 class="text-light opacity-75" style="line-height: 1.6;">Founded in 2018, Stride was born from a simple idea: footwear should never make you choose between style and comfort. Every shoe we create is designed to move with you, support you, and help you look great doing it.</h6>
             </div>
@@ -361,7 +361,7 @@
                             </div>
                             <div class="customer-name">
                                 <h6 class="text-light mb-0">Marcus Chen</h6>
-                                <p class="text-secondary mb-0" style="font-size: .9rem;">Marathon Runner</p>
+                                <p class="text-secondary mb-0 small">Marathon Runner</p>
                             </div>
                         </div>
                     </div>
@@ -389,7 +389,7 @@
                             </div>
                             <div class="customer-name">
                                 <h6 class="text-light mb-0">Emily Rodriguez</h6>
-                                <p class="text-secondary mb-0" style="font-size: .9rem;">Fitness Instructor</p>
+                                <p class="text-secondary mb-0 small">Fitness Instructor</p>
                             </div>
                         </div>
                     </div>
@@ -417,7 +417,7 @@
                             </div>
                             <div class="customer-name">
                                 <h6 class="text-light mb-0">David Kim</h6>
-                                <p class="text-secondary mb-0" style="font-size: .9rem;">Sneaker Enthusiast</p>
+                                <p class="text-secondary mb-0 small">Sneaker Enthusiast</p>
                             </div>
                         </div>
                     </div>
@@ -429,16 +429,15 @@
     <div class="container-fluid mt-5 rounded-4 px-0 mx-0 " style="background: var(--primary);">
         <div class="container p-5">
             <div class="p-5 text-center">
-            <h1 class="text-light fw-bolder" style="font-size: 3rem;">Ready to find your perfect pair?
+            <h1 class="text-light fw-bolder fa-3x">Ready to find your perfect pair?
             </h1>
             <p class="text-light bg-opacity-75">Browse our collection and step into comfort and style. Free shipping on all orders over $75.
             </p>
             <div class="pair-buttons mt-5 d-flex justify-content-center align-items-center flex-wrap gap-4">
-                <button class="btn bg-light p-3 px-4 rounded-pill">
+                <button class="btn bg-light p-2 px-4 rounded-pill">
                     Shop now <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
                 </button>
-        
-                <button class="btn browse-btn text-light p-3 px-4 rounded-pill">Browse Categories</button>
+                <button class="btn browse-btn text-light p-2 px-4 rounded-pill">Browse Categories</button>
             </div>
         </div>
         </div>
@@ -448,7 +447,7 @@
         <div class="container">
             <div class="row align-items-center mb-5 mt-5 p-3">
                 <div class="col-lg-6 col-12 mb-4 mb-lg-0">
-                    <h3 class="fw-bold text-light mb-2" style="font-size:2.3rem;">Join the <span
+                    <h3 class="fw-bold text-light mb-2 fa-2x">Join the <span
                             style="color:var(--primary);">Stride Club</span></h3>
                     <p class="mb-1 text-light">Get <b>15% off</b> your first order, plus early access to new drops.
                     </p>
