@@ -54,8 +54,6 @@ function addToCart(productId, quantity = 1) {
     buttons.forEach(btn => {
         const originalHTML = btn.innerHTML;
         btn.innerHTML = '<i class="fa fa-check me-2"></i> Added!';
-        btn.style.background = '#28a745';
-        btn.style.color = 'white';
         setTimeout(() => {
             btn.innerHTML = originalHTML;
             btn.style.background = '';
@@ -275,28 +273,6 @@ function checkout() {
     
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     alert(`Thank you for your order! 🎉\n\nTotal: $${total.toFixed(2)}\n\nThis would redirect to checkout.`);
-}
-
-// ===== WISHLIST =====
-
-function addToWishlist(productId) {
-    const product = products[productId];
-    if (!product) return;
-    
-    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-    
-    if (!wishlist.find(item => item.id === productId)) {
-        wishlist.push({
-            id: product.id,
-            name: product.name,
-            price: product.price,
-            image: product.images.main
-        });
-        localStorage.setItem('wishlist', JSON.stringify(wishlist));
-        showNotification(`${product.name} added to wishlist! ❤️`);
-    } else {
-        showNotification(`${product.name} is already in your wishlist`);
-    }
 }
 
 // ===== NOTIFICATIONS =====
