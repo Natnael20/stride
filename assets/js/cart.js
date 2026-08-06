@@ -1,179 +1,16 @@
-// Complete Cart Functionality
-// Product database matching your shop items
-const products = {
-    1: {
-        id: 1,
-        name: "Nike Free RN Flyknit",
-        type: "Running",
-        price: 150,
-        originalPrice: 218,
-        rating: 4.9,
-        reviewCount: 234,
-        images: { main: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=1000&fit=crop" }
-    },
-    2: {
-        id: 2,
-        name: "Carhartt WIP x Nike Air Force 1 Low",
-        type: "Sneakers",
-        price: 129,
-        originalPrice: 129,
-        rating: 4.8,
-        reviewCount: 189,
-        images: { main: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=1000&fit=crop" }
-    },
-    3: {
-        id: 3,
-        name: "Nike Air Force 1",
-        type: "Basketball",
-        price: 199,
-        originalPrice: 199,
-        rating: 4.7,
-        reviewCount: 156,
-        images: { main: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=800&h=1000&fit=crop" }
-    },
-    4: {
-        id: 4,
-        name: "Timberland Men's Earthkeepers Original 6-inch Boot",
-        type: "Boots",
-        price: 160,
-        originalPrice: 160,
-        rating: 4.8,
-        reviewCount: 142,
-        images: { main: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=1000&fit=crop" }
-    },
-    5: {
-        id: 5,
-        name: "Nike SuperRep Go",
-        type: "Running",
-        price: 100,
-        originalPrice: 100,
-        rating: 4.9,
-        reviewCount: 98,
-        images: { main: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=1000&fit=crop" }
-    },
-    6: {
-        id: 6,
-        name: "Adidas Originals Deerupt Runner",
-        type: "Sandals",
-        price: 120,
-        originalPrice: 120,
-        rating: 4.8,
-        reviewCount: 267,
-        images: { main: "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=1000&fit=crop" }
-    },
-    7: {
-        id: 7,
-        name: "Nike SB Dunk High",
-        type: "Sneakers",
-        price: 110,
-        originalPrice: 110,
-        rating: 4.5,
-        reviewCount: 423,
-        images: { main: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=800&h=1000&fit=crop" }
-    },
-    8: {
-        id: 8,
-        name: "Vans Old Skool Sneaker",
-        type: "Sneakers",
-        price: 70,
-        originalPrice: 70,
-        rating: 4.7,
-        reviewCount: 89,
-        images: { main: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=1000&fit=crop" }
-    },
-    9: {
-        id: 9,
-        name: "Two Strap slide sandal",
-        type: "Sandals",
-        price: 50,
-        originalPrice: 50,
-        rating: 4.6,
-        reviewCount: 178,
-        images: { main: "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=1000&fit=crop" }
-    },
-    10: {
-        id: 10,
-        name: "Nike Air Force 1 Shado Pastel",
-        type: "Training",
-        price: 210,
-        originalPrice: 210,
-        rating: 4.4,
-        reviewCount: 312,
-        images: { main: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=1000&fit=crop" }
-    },
-    11: {
-        id: 11,
-        name: "Puma Court Star",
-        type: "Sneakers",
-        price: 99,
-        originalPrice: 99,
-        rating: 4.6,
-        reviewCount: 245,
-        images: { main: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=1000&fit=crop" }
-    },
-    12: {
-        id: 12,
-        name: "Adidas Yeezy Boost 350 V2",
-        type: "Sneakers",
-        price: 220,
-        originalPrice: 220,
-        rating: 4.7,
-        reviewCount: 134,
-        images: { main: "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=800&h=1000&fit=crop" }
-    },
-    13: {
-        id: 13,
-        name: "Captain Lace-Up Boot",
-        type: "Boots",
-        price: 199,
-        originalPrice: 199,
-        rating: 4.5,
-        reviewCount: 567,
-        images: { main: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=1000&fit=crop" }
-    },
-    14: {
-        id: 14,
-        name: "Converse Chuck Taylor All Star High Tops",
-        type: "Sneakers",
-        price: 80,
-        originalPrice: 80,
-        rating: 4.8,
-        reviewCount: 76,
-        images: { main: "https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=800&h=1000&fit=crop" }
-    },
-    15: {
-        id: 15,
-        name: "Nike Air Max 1 Ultra",
-        type: "Sneakers",
-        price: 150,
-        originalPrice: 150,
-        rating: 4.4,
-        reviewCount: 198,
-        images: { main: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=1000&fit=crop" }
-    },
-    16: {
-        id: 16,
-        name: "Winter Boot",
-        type: "Boots",
-        price: 279,
-        originalPrice: 279,
-        rating: 4.9,
-        reviewCount: 67,
-        images: { main: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&h=1000&fit=crop" }
-    }
-};
+import { products } from './products-data.js';
 
+// ===== CART STATE =====
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-(function immediateBadgeUpdate() {
-    const badge = document.getElementById('cart-badge');
-    if (badge) {
-        const uniqueItems = cart.length;
-        badge.textContent = uniqueItems;
-        badge.style.display = 'block';
-    }
+// ===== INITIALIZE CART BADGE =====
+(function initCartBadge() {
+    updateCartBadge();
 })();
 
+// ===== CORE CART FUNCTIONS =====
+
+// Add to cart
 function addToCart(productId, quantity = 1) {
     const product = products[productId];
     if (!product) {
@@ -198,22 +35,26 @@ function addToCart(productId, quantity = 1) {
         });
     }
 
+    // Save to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
     
+    // Update UI
     updateCartBadge();
-    
     animateCartIcon();
     
+    // Show notification
     if (existingItem) {
         showNotification(`Updated quantity for ${product.name} (${existingItem.quantity} total)`);
     } else {
         showNotification(`${product.name} added to cart!`);
     }
     
-    const buttons = document.querySelectorAll(`[onclick="addToCart(${productId})"]`);
+    // Update button feedback
+    const buttons = document.querySelectorAll(`[onclick*="addToCart(${productId})"]`);
     buttons.forEach(btn => {
         const originalHTML = btn.innerHTML;
-        btn.innerHTML = '<i class="fa fa-check small fa-1x"></i> Added!';
+        btn.innerHTML = '<i class="fa fa-check me-2"></i> Added!';
+        btn.style.background = '#28a745';
         btn.style.color = 'white';
         setTimeout(() => {
             btn.innerHTML = originalHTML;
@@ -221,18 +62,6 @@ function addToCart(productId, quantity = 1) {
             btn.style.color = '';
         }, 1500);
     });
-    
-}
-
-// Animate cart icon when item is added
-function animateCartIcon() {
-    const cartIcon = document.querySelector('.shopping-cart .fa-shopping-cart');
-    if (cartIcon) {
-        cartIcon.classList.add('cart-bounce');
-        setTimeout(() => {
-            cartIcon.classList.remove('cart-bounce');
-        }, 500);
-    }
 }
 
 // Remove from cart
@@ -240,8 +69,12 @@ function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartBadge();
+    
+    // If on cart page, re-render
     if (document.getElementById('cart-items-container')) {
         renderCartItems();
+    } else {
+        showNotification('Item removed from cart');
     }
 }
 
@@ -257,20 +90,23 @@ function updateQuantity(productId, newQuantity) {
             if (document.getElementById('cart-items-container')) {
                 renderCartItems();
             }
+            updateCartBadge();
         }
     }
 }
 
-// Update cart badge - shows number of UNIQUE ITEMS (always visible)
+// ===== UI UPDATES =====
+
+// Update cart badge - shows number of UNIQUE ITEMS
 function updateCartBadge() {
     const badge = document.getElementById('cart-badge');
     if (badge) {
         const uniqueItems = cart.length;
         const oldValue = badge.textContent;
         badge.textContent = uniqueItems;
-        badge.style.display = 'block'; // Always show the badge
+        badge.style.display = uniqueItems > 0 ? 'block' : 'block'; // Always show badge
         
-        // Only animate when value changes
+        // Animate on change
         if (oldValue !== String(uniqueItems)) {
             badge.classList.add('badge-pop');
             setTimeout(() => {
@@ -279,6 +115,20 @@ function updateCartBadge() {
         }
     }
 }
+
+// Animate cart icon
+function animateCartIcon() {
+    const cartIcon = document.querySelector('.shopping-cart .fa-shopping-cart') || 
+                     document.querySelector('.fa-shopping-cart');
+    if (cartIcon) {
+        cartIcon.classList.add('cart-bounce');
+        setTimeout(() => {
+            cartIcon.classList.remove('cart-bounce');
+        }, 500);
+    }
+}
+
+// ===== CART PAGE FUNCTIONS =====
 
 // Render cart items on cart page
 function renderCartItems() {
@@ -315,14 +165,14 @@ function renderCartItems() {
                     <small class="text-secondary">${item.type || 'Shoe'}</small>
                     <div class="d-flex align-items-center gap-3 mt-2">
                         <div class="quantity-selector d-flex align-items-center">
-                            <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${item.id}, ${item.quantity - 1})">−</button>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="window.updateQuantity(${item.id}, ${item.quantity - 1})">−</button>
                             <span class="px-3 text-light">${item.quantity}</span>
-                            <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${item.id}, ${item.quantity + 1})">+</button>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="window.updateQuantity(${item.id}, ${item.quantity + 1})">+</button>
                         </div>
-                        <span class="text-light fw-bold">$${itemTotal}</span>
+                        <span class="text-light fw-bold">$${itemTotal.toFixed(2)}</span>
                     </div>
                 </div>
-                <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(${item.id})">
+                <button class="btn btn-sm btn-outline-danger" onclick="window.removeFromCart(${item.id})">
                     <i class="fa fa-trash"></i>
                 </button>
             </div>
@@ -340,31 +190,39 @@ function updateSummary(subtotal) {
     const shippingEl = document.getElementById('shipping');
     
     if (subtotalEl) {
-        subtotalEl.textContent = `$${subtotal}`;
+        subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+    }
+    
+    let total = subtotal;
+    
+    // Check for discount
+    const discountRow = document.getElementById('discount-row');
+    const discountAmountEl = document.getElementById('discount-amount');
+    
+    if (discountRow && discountRow.style.display !== 'none' && discountAmountEl) {
+        const discountText = discountAmountEl.textContent.replace('-$', '').trim();
+        const discountAmount = parseFloat(discountText) || 0;
+        total = subtotal - discountAmount;
+    }
+    
+    // Calculate shipping
+    if (shippingEl) {
+        if (subtotal >= 75) {
+            shippingEl.textContent = 'Free';
+        } else if (subtotal > 0) {
+            shippingEl.textContent = '$5.00';
+            total += 5;
+        } else {
+            shippingEl.textContent = 'Free';
+        }
     }
     
     if (totalEl) {
-        let total = subtotal;
-        
-        const discountRow = document.getElementById('discount-row');
-        if (discountRow && discountRow.style.display !== 'none') {
-            const discountAmount = parseFloat(document.getElementById('discount-amount')?.textContent.replace('-$', '') || 0);
-            total = subtotal - discountAmount;
-        }
-        
-        if (shippingEl) {
-            if (subtotal >= 75) {
-                shippingEl.textContent = 'Free';
-            } else if (subtotal > 0) {
-                shippingEl.textContent = '$5.00';
-            } else {
-                shippingEl.textContent = 'Free';
-            }
-        }
-        
         totalEl.textContent = `$${total.toFixed(2)}`;
     }
 }
+
+// ===== PROMO CODE =====
 
 // Apply promo code
 function applyPromo() {
@@ -373,37 +231,76 @@ function applyPromo() {
     const discountRow = document.getElementById('discount-row');
     const discountAmount = document.getElementById('discount-amount');
     
-    if (!promoInput) return;
+    if (!promoInput || !promoMessage) return;
     
     const code = promoInput.value.trim().toUpperCase();
     
-    if (code === 'STRIDE20') {
-        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        const discount = subtotal * 0.2;
-        
-        discountRow.style.display = 'flex';
-        discountAmount.textContent = `-$${discount.toFixed(2)}`;
-        promoMessage.textContent = '✅ Promo code applied! 20% off';
-        promoMessage.style.color = '#ff6b35';
-        
-        updateSummary(subtotal);
-    } else if (code) {
-        promoMessage.textContent = '❌ Invalid promo code';
-        promoMessage.style.color = '#dc3545';
-        discountRow.style.display = 'none';
-    }
-}
-
-// Checkout function
-function checkout() {
-    if (cart.length === 0) {
-        alert('Your cart is empty! Add some items first.');
+    if (!code) {
+        promoMessage.textContent = 'Please enter a promo code';
+        promoMessage.style.color = '#ffc107';
         return;
     }
-    alert('Thank you for your order! 🎉 This would redirect to checkout.');
+    
+    // Calculate subtotal
+    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    
+    if (code === 'STRIDE20') {
+        const discount = subtotal * 0.2;
+        
+        if (discountRow && discountAmount) {
+            discountRow.style.display = 'flex';
+            discountAmount.textContent = `-$${discount.toFixed(2)}`;
+        }
+        
+        promoMessage.textContent = '✅ Promo code applied! 20% off';
+        promoMessage.style.color = '#28a745';
+        
+        updateSummary(subtotal);
+    } else {
+        promoMessage.textContent = '❌ Invalid promo code';
+        promoMessage.style.color = '#dc3545';
+        if (discountRow) {
+            discountRow.style.display = 'none';
+        }
+    }
 }
 
-// Show notification
+// ===== CHECKOUT =====
+
+function checkout() {
+    if (cart.length === 0) {
+        showNotification('Your cart is empty! Add some items first.');
+        return;
+    }
+    
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    alert(`Thank you for your order! 🎉\n\nTotal: $${total.toFixed(2)}\n\nThis would redirect to checkout.`);
+}
+
+// ===== WISHLIST =====
+
+function addToWishlist(productId) {
+    const product = products[productId];
+    if (!product) return;
+    
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    
+    if (!wishlist.find(item => item.id === productId)) {
+        wishlist.push({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.images.main
+        });
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        showNotification(`${product.name} added to wishlist! ❤️`);
+    } else {
+        showNotification(`${product.name} is already in your wishlist`);
+    }
+}
+
+// ===== NOTIFICATIONS =====
+
 function showNotification(message) {
     let notificationContainer = document.getElementById('notification-container');
     
@@ -449,37 +346,20 @@ function showNotification(message) {
     }, 3000);
 }
 
-// Add to wishlist
-function addToWishlist(productId) {
-    const product = products[productId];
-    if (product) {
-        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-        
-        if (!wishlist.find(item => item.id === productId)) {
-            wishlist.push({
-                id: product.id,
-                name: product.name,
-                price: product.price,
-                image: product.images.main
-            });
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            showNotification(`${product.name} added to wishlist! ❤️`);
-        } else {
-            showNotification(`${product.name} is already in your wishlist`);
-        }
-    }
-}
+// ===== INITIALIZE =====
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
+    // Update cart badge
     updateCartBadge();
     
+    // If on cart page, render cart items
     if (document.getElementById('cart-items-container')) {
         renderCartItems();
     }
 });
 
-// Add CSS animations
+// ===== ADD CSS ANIMATIONS =====
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
@@ -511,11 +391,13 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Make functions globally available
+// ===== EXPOSE GLOBALLY =====
 window.addToCart = addToCart;
 window.addToWishlist = addToWishlist;
 window.removeFromCart = removeFromCart;
 window.updateQuantity = updateQuantity;
 window.applyPromo = applyPromo;
 window.checkout = checkout;
-window.products = products; 
+window.renderCartItems = renderCartItems;
+window.updateCartBadge = updateCartBadge;
+window.products = products;

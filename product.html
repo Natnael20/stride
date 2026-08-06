@@ -79,7 +79,10 @@
                 <div class="shopping-cart">
                     <a class="position-relative" href="cart.html">
                         <i class="fa fa-shopping-cart text-light opacity-75 fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1 small" style="background: var(--primary);">0</span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill z-1 small"
+                            style="background: var(--primary);" id="cart-badge">
+                            0
+                        </span>
                     </a>
                 </div>
             </div>
@@ -220,7 +223,9 @@
         </div>
     </footer>
 
-    <script src="assets/js/product.js"></script>
+    <!-- Change the order - cart.js should load first -->
+    <script type="module" src="assets/js/cart.js"></script>
+    <script type="module" src="assets/js/product.js"></script>
     <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

@@ -371,9 +371,12 @@
                                 </button>
 
                                 <span class="mt-1 rounded bg-light align-items-center d-flex justify-content-center"
-                                    style="padding: 12px 12px;" aria-label="Add to wishlist">
+                                    style="padding: 12px 12px;" 
+                                    onclick="window.addToWishlist(${product.id})"
+                                    aria-label="Add to wishlist">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                 </span>
+                                
                             </div>
                         </div>
                         <div class="card-detail">
@@ -1203,7 +1206,8 @@
                 </div>
             </div>
         </footer>
-        <script src="assets/js/cart.js"></script>
+        
+        <script type="module" src="assets/js/cart.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/search.js"></script>
 </body>
