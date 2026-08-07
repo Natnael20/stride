@@ -366,6 +366,7 @@ header {
     white-space: nowrap;
 }
 
+
 .border:hover .collect-img img {
     transform: scale(1.05);
 }
