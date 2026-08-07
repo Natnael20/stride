@@ -1,4 +1,7 @@
+// cart.js
 import { products } from './products-data.js';
+
+console.log('🛒 Cart.js loaded');
 
 // ===== CART STATE =====
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -12,6 +15,8 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Add to cart
 function addToCart(productId, quantity = 1) {
+    console.log('🛒 addToCart called with productId:', productId);
+    
     const product = products[productId];
     if (!product) {
         console.error('Product not found for ID:', productId);
@@ -54,6 +59,7 @@ function addToCart(productId, quantity = 1) {
     buttons.forEach(btn => {
         const originalHTML = btn.innerHTML;
         btn.innerHTML = '<i class="fa fa-check me-2"></i> Added!';
+        btn.style.color = 'white';
         setTimeout(() => {
             btn.innerHTML = originalHTML;
             btn.style.background = '';
@@ -64,6 +70,8 @@ function addToCart(productId, quantity = 1) {
 
 // Remove from cart
 function removeFromCart(productId) {
+    console.log('🗑️ removeFromCart called with productId:', productId);
+    
     cart = cart.filter(item => item.id !== productId);
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartBadge();
@@ -78,6 +86,8 @@ function removeFromCart(productId) {
 
 // Update quantity
 function updateQuantity(productId, newQuantity) {
+    console.log('📦 updateQuantity called with productId:', productId, 'newQuantity:', newQuantity);
+    
     const item = cart.find(item => item.id === productId);
     if (item) {
         if (newQuantity <= 0) {
@@ -102,7 +112,7 @@ function updateCartBadge() {
         const uniqueItems = cart.length;
         const oldValue = badge.textContent;
         badge.textContent = uniqueItems;
-        badge.style.display = uniqueItems > 0 ? 'block' : 'block'; // Always show badge
+        badge.style.display = 'block'; // Always show badge
         
         // Animate on change
         if (oldValue !== String(uniqueItems)) {
@@ -130,8 +140,12 @@ function animateCartIcon() {
 
 // Render cart items on cart page
 function renderCartItems() {
+    console.log('📄 renderCartItems called');
     const container = document.getElementById('cart-items-container');
-    if (!container) return;
+    if (!container) {
+        console.warn('⚠️ cart-items-container not found');
+        return;
+    }
 
     if (cart.length === 0) {
         container.innerHTML = `
@@ -325,11 +339,13 @@ function showNotification(message) {
 // ===== INITIALIZE =====
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('🛒 DOM loaded, initializing cart...');
     // Update cart badge
     updateCartBadge();
     
     // If on cart page, render cart items
     if (document.getElementById('cart-items-container')) {
+        console.log('📄 On cart page - rendering items');
         renderCartItems();
     }
 });
@@ -368,8 +384,8 @@ style.textContent = `
 document.head.appendChild(style);
 
 // ===== EXPOSE GLOBALLY =====
+console.log('🛒 Exposing functions globally...');
 window.addToCart = addToCart;
-window.addToWishlist = addToWishlist;
 window.removeFromCart = removeFromCart;
 window.updateQuantity = updateQuantity;
 window.applyPromo = applyPromo;
@@ -377,3 +393,5 @@ window.checkout = checkout;
 window.renderCartItems = renderCartItems;
 window.updateCartBadge = updateCartBadge;
 window.products = products;
+
+console.log('✅ Cart.js loaded successfully with', cart.length, 'items');
