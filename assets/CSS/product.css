@@ -143,3 +143,40 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/* Required field validation styles */
+.color-option,
+.size-btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.color-option.validation-error,
+.size-btn.validation-error {
+    animation: shake 0.5s ease;
+    border: 2px solid #ff4444 !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+}
+
+#color-container,
+#size-container {
+    transition: all 0.3s ease;
+}
+
+.color-option.active {
+    border: 3px solid var(--primary);
+    transform: scale(1.1);
+}
+
+.size-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}

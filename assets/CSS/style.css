@@ -366,6 +366,15 @@ header {
     white-space: nowrap;
 }
 
+.img-shop > a > span {
+    font-size: clamp(.8em, 1.3vw, 1rem);
+    
+}
+
+.img-shop .wishlist-product {
+    font-size: clamp(1rem, 1.7vw, 1.3rem);
+}
+
 
 .border:hover .collect-img img {
     transform: scale(1.05);

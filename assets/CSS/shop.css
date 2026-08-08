@@ -24,11 +24,3 @@ header {
 }
 
 
-.img-shop > a > span {
-    font-size: clamp(.8em, 1vw, 3rem);
-    
-}
-
-.img-shop .wishlist-product {
-    font-size: clamp(1rem, 1.3vw, 3rem);
-}

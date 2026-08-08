@@ -55,7 +55,7 @@ function addToWishlist(productId) {
     }
     
     // Show notification
-    showNotification(`${product.name} added to wishlist! ❤️`);
+    showNotification(`${product.name} added to wishlist!`);
     
     // Animate heart icon
     animateHeartIcon();
@@ -557,7 +557,7 @@ function restoreHeartStates() {
             if (heartIcon) {
                 if (inWishlist) {
                     heartIcon.className = 'fa fa-heart';
-                    heartIcon.style.color = '#ff4444';
+                    heartIcon.style.color = '#EA580C';
                     const parentSpan = heartIcon.closest('.wishlist-toggle-btn');
                     if (parentSpan) {
                         parentSpan.style.background = 'rgba(255, 68, 68, 0.15)';
@@ -622,11 +622,11 @@ function renderWishlistItems() {
                         ${badgeHTML}
                         <img src="${item.image}" alt="${item.name}" class="img-fluid rounded bg-transparent">
                         <div class="img-shop position-absolute bottom-0 start-50 translate-middle-x d-flex align-items-center justify-content-between gap-1 w-100 ">
-                            <button onclick="addToCart(${item.id})" class="btn bg-light p-2 mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
+                            <button onclick="addToCart(${item.id})" class="btn bg-light mt-1 fw-semibold align-items-center d-flex justify-content-center gap-2 w-100">
                                 <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i>
-                                <span>Add to Cart</span>
+                                <span style="font-size: clamp(.8em, 1.3vw, 1rem);">Shop Now</span>
                             </button>
-                            <button onclick="removeFromWishlist(${item.id})" class="mt-1 border border-0 rounded align-items-center d-flex justify-content-center" style="padding: 12px 12px; aria-label="Remove from wishlist">
+                            <button onclick="removeFromWishlist(${item.id})" style="font-size: clamp(1rem, 1.7vw, 1.3rem);" class="mt-1 p-2 border border-0 rounded align-items-center d-flex justify-content-center" style="padding: 12px 12px; aria-label="Remove from wishlist">
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -690,7 +690,7 @@ function showNotification(message) {
         padding: 15px 20px;
         border-radius: 8px;
         margin-bottom: 10px;
-        border-left: 4px solid #ff4444;
+        border-left: 4px solid #EA580C;
         box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         animation: slideIn 0.3s ease-out;
     `;

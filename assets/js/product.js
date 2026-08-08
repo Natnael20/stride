@@ -89,11 +89,11 @@ function renderProduct(productId) {
             </div>
 
             <div class="d-flex gap-3 mt-4">
-                <!-- Add to Cart Button - Calls cart.js function -->
-                <button class="btn py-3 fw-bold" style="background: var(--primary); color: white;" onclick="addToCart(${product.id})">
+                <!-- Add to Cart Button -->
+                <button class="btn py-3 fw-bold add-to-cart-btn" style="background: var(--primary); color: white;" onclick="handleAddToCart(${product.id}, this)">
                     <i class="fa fa-shopping-cart me-2"></i> Add to Cart
                 </button>
-                <!-- Wishlist Button - Calls wishlist.js function -->
+                <!-- Wishlist Button -->
                 <button class="btn px-4 py-3 border wishlist-btn" 
                         style="background: ${inWishlist ? 'rgba(255, 68, 68, 0.1)' : 'transparent'}; color: ${inWishlist ? '#ff4444' : 'var(--primary)'}; border-color: ${inWishlist ? '#ff4444' : 'var(--primary)'};" 
                         onclick="toggleWishlist(${product.id})"
@@ -106,7 +106,6 @@ function renderProduct(productId) {
 
             <div class="mt-4">
                 <div class="d-flex justify-content-between flex-wrap gap-3">
-                    <!-- Free Shipping -->
                     <div class="d-block p-3 rounded-4" style="background: var(--color-gray-900); flex: 1; min-width: 200px;">
                         <div class="d-flex gap-3 align-items-center">
                             <i class="fa fa-truck fs-4" style="color:var(--color-primary-700);"></i>
@@ -115,7 +114,6 @@ function renderProduct(productId) {
                         <span class="text-secondary small" style="margin-left: 40px">On orders over $75</span>
                     </div>
                     
-                    <!-- 60-Day Returns -->
                     <div class="d-block p-3 rounded-4" style="background: var(--color-gray-900); flex: 1; min-width: 200px;">
                         <div class="d-flex gap-3 align-items-center">
                             <i class="fa fa-undo fs-4" style="color:var(--color-primary-700);"></i>
@@ -147,7 +145,93 @@ function renderProduct(productId) {
     document.getElementById('product-container').innerHTML = productHTML;
 }
 
-// Global functions for interactions
+// ===== HANDLE ADD TO CART WITH VALIDATION =====
+function handleAddToCart(productId, button) {
+    // Check if color is selected
+    const activeColor = document.querySelector('.color-option.active');
+    if (!activeColor) {
+        showNotification('Please select a color');
+        return;
+    }
+
+    // Check if size is selected
+    const activeSize = document.querySelector('.size-btn.active');
+    if (!activeSize) {
+        showNotification('Please select a size');
+        return;
+    }
+
+    // Get quantity from input
+    const quantityInput = document.getElementById('quantity-input');
+    const quantity = parseInt(quantityInput.value) || 1;
+
+    // Call the global addToCart function from app.js
+    if (typeof window.addToCart === 'function') {
+        window.addToCart(productId, quantity);
+    } else {
+        console.error('addToCart function not found');
+        showNotification('Error adding to cart');
+    }
+
+    // Update button feedback - briefly show "Added!"
+    if (button) {
+        const originalHTML = button.innerHTML;
+        const originalBg = button.style.background;
+        const originalColor = button.style.color;
+        const originalBorder = button.style.border;
+        
+        button.innerHTML = '<i class="fa fa-check me-2"></i> Added!';
+        button.style.background = '#EA580C';
+        button.style.color = '#ffffff';
+        button.style.transition = 'all 0.3s ease';
+        
+        setTimeout(() => {
+            button.innerHTML = originalHTML;
+            button.style.background = originalBg || '';
+            button.style.color = originalColor || '';
+            button.style.border = originalBorder || '';
+            button.disabled = false;
+        }, 2000);
+    }
+}
+
+// ===== SHOW NOTIFICATION =====
+function showNotification(message) {
+    let container = document.getElementById('notification-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'notification-container';
+        container.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            max-width: 350px;
+        `;
+        document.body.appendChild(container);
+    }
+    
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        background: #1a1a1a;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border-left: 4px solid #ff6b35;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        animation: slideIn 0.3s ease-out;
+    `;
+    notification.innerHTML = `<span>${message}</span>`;
+    
+    container.appendChild(notification);
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease-in';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+// ===== GLOBAL FUNCTIONS FOR INTERACTIONS =====
 let selectedSize = null;
 let selectedColor = null;
 
@@ -196,3 +280,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProduct(productId || 1);
 });
 
+// Make handleAddToCart globally available
+window.handleAddToCart = handleAddToCart;
+window.showNotification = showNotification;
